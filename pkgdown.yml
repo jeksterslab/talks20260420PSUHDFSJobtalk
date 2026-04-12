@@ -1,0 +1,11 @@
+pandoc: 3.9.0.2
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  containers: containers.html
+  session: session.html
+  talks20260420PSUHDFSJobtalk: talks20260420PSUHDFSJobtalk.html
+last_built: 2026-04-12T01:33Z
+urls:
+  reference: https://github.com/jeksterslab/talks20260420PSUHDFSJobtalk/reference
+  article: https://github.com/jeksterslab/talks20260420PSUHDFSJobtalk/articles
