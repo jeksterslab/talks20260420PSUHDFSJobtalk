@@ -1,0 +1,133 @@
+\documentclass{beamer}
+
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\usepackage{tikz}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{threeparttable}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\usepackage{xcolor}
+
+\definecolor{direct}{HTML}{2C7BB6}
+\definecolor{indirect}{HTML}{D7191C}
+\definecolor{total}{HTML}{5E3C99}
+\definecolor{myblue}{HTML}{377EB8}
+\definecolor{myred}{HTML}{E41A1C}
+\definecolor{myviolet}{HTML}{984EA3}
+\definecolor{myteal}{HTML}{008B8B}
+
+\usepackage{appendixnumberbeamer}
+
+\setbeamertemplate{caption}[numbered]
+
+\setbeamerfont{author}{size=\footnotesize}
+\setbeamerfont{institute}{size=\footnotesize}
+\setbeamerfont{date}{size=\footnotesize}
+
+\setbeameroption{hide notes} % Only slides
+%\setbeameroption{show only notes} % Only notes
+%\setbeameroption{show notes on second screen=right} % Both
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLATEX APA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% begin.rcode
+% #| label = "root",
+% #| include = FALSE
+% root <- rprojroot::is_rstudio_project
+%% end.rcode
+
+%% begin.rcode
+% #| label = "knitr",
+% #| include = FALSE,
+% #| file = root$find_file(
+% #|   ".setup",
+% #|   "latex",
+% #|   "r-scripts",
+% #|   "knitr.R"
+% #| )
+%% end.rcode
+
+%% begin.rcode
+% #| label = "biblatex",
+% #| echo = FALSE,
+% #| message = FALSE,
+% #| warning = FALSE,
+% #| results = "asis"
+% if (require("rProject")) {
+%   Bib(
+%     path = dirname(
+%       root$find_file(
+%         "project.Rproj"
+%       )
+%     )
+%   )
+%   cat(
+%     .PreambleBiblatex(
+%       path = root$find_file(
+%         ".setup",
+%         "latex",
+%         "bib"
+%       )
+%     )
+%   )
+% } else {
+%   cat(
+%     .PreambleBiblatexCombined(
+%       path = root$find_file(
+%         ".setup",
+%         "latex",
+%         "bib"
+%       ),
+%       output_path = root$find_file(
+%         ".setup",
+%         "latex"
+%       )
+%     )
+%   )
+% }
+%% end.rcode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{{\normalsize Title:\\Subttle}\vspace{-1em}}
+\author{Ivan Jacob Agaloos Pesigan (Jek)\\\href{mailto:ijapesigan@psu.edu}{ijapesigan@psu.edu}\vspace{-.9em}}
+\institute{Postdoctoral Fellow\\Prevention and Methodology Training Program (PAMT)\\Edna Bennett Pierce Prevention Research Center\\The Pennsylvania State University\vspace{-.9em}}
+\date{April 20, 2026\vspace{-.5em}}
+\titlegraphic{
+	\includegraphics[scale = .30]{.setup/latex/figures/logo/psu-logo.png}\\\tiny\href{https://github.com/jeksterslab/talks20260420PSUHDFSJobtalk}{\textcolor{indirect}{https://github.com/jeksterslab/talks20260420PSUHDFSJobtalk}}
+}
+
+\begin{document}
+
+\nocite{Pesigan-Russell-Chow-2025, Pesigan-Russell-Chow-2025o}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\setbeamertemplate{navigation symbols}{%
+	\insertslidenavigationsymbol
+	\insertframenavigationsymbol
+	\insertsubsectionnavigationsymbol
+	\insertsectionnavigationsymbol
+	\insertdocnavigationsymbol
+	\insertbackfindforwardnavigationsymbol
+	\hspace{1em}%
+	\usebeamerfont{footline}
+	\insertframenumber/\inserttotalframenumber%
+}
+
+
+\end{document}

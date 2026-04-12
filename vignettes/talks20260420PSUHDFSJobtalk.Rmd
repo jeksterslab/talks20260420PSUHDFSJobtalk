@@ -1,14 +1,31 @@
-talks20260420PSUHDFSJobtalk
-================
-Ivan Jacob Agaloos Pesigan
-2026-04-12
+---
+title: "talks20260420PSUHDFSJobtalk: Penn State HDFS Job Talk Materials"
+author: "Ivan Jacob Agaloos Pesigan"
+date: "`r Sys.Date()`"
+bibliography: "vignettes.bib"
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{talks20260420PSUHDFSJobtalk: Penn State HDFS Job Talk Materials}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
 
-<!-- README.md is generated from .setup/readme/README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
 ## Description
 
-Materials for the Penn State Human Development and Family Studies job
-talk, delivered on April 20, 2026.
+Materials for the Penn State Human Development and Family Studies job talk, delivered on April 20, 2026.
 
 ## Abstract
 
@@ -36,6 +53,6 @@ mediation models. *Psychological Methods*.
 
 ## More Information
 
-See [GitHub
-Pages](https://jeksterslab.github.io/talks20260420PSUHDFSJobtalk/index.html)
+See
+[GitHub Pages](https://jeksterslab.github.io/talks20260420PSUHDFSJobtalk/index.html)
 for more information.

@@ -1,0 +1,72 @@
+\documentclass{standalone}
+
+\usepackage{xcolor}
+
+\definecolor{myblue}{HTML}{377EB8}
+\definecolor{myred}{HTML}{E41A1C}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usepackage{lmodern}
+\SetSymbolFont{letters}{bold}{OML}{cmbr}{bx}{it}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{sansmathfonts}
+
+\begin{document}
+\begin{tikzpicture}
+	\begin{axis}[
+			xlabel={Hours since event start},
+			ylabel={TAC},
+			xmin=-0.70, xmax=15,
+			ymin=-0.01, ymax=.25,
+			xtick={0,5,10,15},
+			ytick={0,0.05, 0.10,0.15,0.20,0.25},
+			yticklabels={0.00,0.05, 0.10,0.15,0.20,0.25},
+			ymajorgrids=true,
+			grid style=dashed,
+		]
+						
+		\addplot[
+			color=myblue,
+			mark=o,
+		]
+		coordinates {
+            (0, 0)
+            (0.5, 0.004902)
+            (1.016666667, 0.009967)
+            (1.516666667, 0.014869)
+            (2.033333334, 0.019935)
+            (2.55, 0.025000)
+            (3.05, 0.029762)
+            (3.566666667, 0.033899)
+            (4.083333334, 0.037128)
+            (4.583333334, 0.039273)
+            (5.1, 0.04)
+            (5.6, 0.04)
+            (6.116666667, 0.039)
+            (6.633333334, 0.036289)
+            (7.2, 0.030000)
+            (7.716666667, 0.023466)
+            (8.233333334, 0.018000)
+            (8.733333334, 0.013689)
+            (9.233333334, 0.010000)
+            (9.766666667, 0.007112)
+            (10.28333333, 0.005000)
+            (10.76666667, 0.003000)
+            (11.3, 0.002000)
+            (11.81666667, 0.001500)
+            (12.31666667, 0.001000)
+            (12.81666667, 0.000700)
+            (13.33333333, 0.000400)
+            (13.83333333, 0.000300)
+            (14.33333333, 0.000200)
+            (14.83333333, 0.000150)
+            (15.33333333, 0.000100)
+            (15.83333333, 0.000050)
+		};
+	\end{axis}
+\end{tikzpicture}
+\end{document}

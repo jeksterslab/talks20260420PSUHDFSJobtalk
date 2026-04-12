@@ -1,0 +1,98 @@
+\documentclass[tikz, border = 1mm]{standalone}
+
+\usepackage{xcolor}
+
+\definecolor{direct}{HTML}{2C7BB6}
+\definecolor{indirect}{HTML}{D7191C}
+\definecolor{total}{HTML}{5E3C99}
+
+\usepackage{sansmathfonts}
+
+\begin{document}
+
+\usetikzlibrary{
+	er,
+	arrows,
+	positioning
+}
+
+\begin{tikzpicture}[
+		auto,
+		node distance = 20mm,
+		manifest/.style = {
+			rectangle,
+			draw,
+			thick,
+			inner sep = 0pt,
+			minimum width = 15mm,
+			minimum height = 10mm
+		},
+		inv/.style = {
+			rectangle,
+			draw=none,
+			fill=none,
+			inner sep = 0pt,
+			minimum width = 7mm,
+			minimum height = 10mm
+		},
+		error/.style = {
+			ellipse,
+			draw,
+			thick,
+			inner sep = 0pt,
+			minimum size = 7mm,
+			align = center
+		},
+		mean/.style={
+			regular polygon,
+			regular polygon sides = 3,
+			draw,
+			thick,
+			inner sep = 0pt,
+			minimum width = 7mm,
+			minimum height = 7mm
+		},
+		path/.style = {
+			->,
+			ultra thick,
+			>=stealth'
+		},
+		dot/.style = {
+			->,
+			thick,
+			>=stealth',
+            densely dotted
+		},
+		dashed/.style = {
+			->,
+			thick,
+			>=stealth',
+            loosely dashed
+		},
+		cov/.style = {
+			<->,
+			thick,
+			>=stealth'
+		},
+	]
+	\node[manifest] (a0) {$a_{t}$};
+	\node[manifest] (b0) [below = of a0] {$b_{t}$};
+	\node[manifest] (c0) [below = of b0] {$c_{t}$};
+    \node[manifest] (d0) [below = of c0] {$d_{t}$};
+	\node[manifest] (a1) [right = of a0] {$a_{t + \Delta t}$};
+	\node[manifest] (b1) [below = of a1] {$b_{t + \Delta t}$};
+	\node[manifest] (c1) [below = of b1] {$c_{t + \Delta t}$};
+    \node[manifest] (d1) [below = of c1] {$d_{t + \Delta t}$};
+	\node[manifest] (a2) [right = of a1] {$a_{t + 2 \Delta t}$};
+	\node[manifest] (b2) [below = of a2] {$b_{t + 2 \Delta t}$};
+	\node[manifest] (c2) [below = of b2] {$c_{t + 2 \Delta t}$};
+    \node[manifest] (d2) [below = of c2] {$d_{t + 2 \Delta t}$};
+    \draw[path, color = indirect] (b0) to node {} (a1);
+    \draw[path, color = indirect] (c0) to node {} (a1);
+    \draw[path, color = indirect] (d0) to node {} (a1);
+    \draw[path, color = indirect] (a1) to node {} (b2);
+    \draw[path, color = indirect] (a1) to node {} (c2);
+    \draw[path, color = indirect] (a1) to node {} (d2);
+\end{tikzpicture}
+
+\end{document}
