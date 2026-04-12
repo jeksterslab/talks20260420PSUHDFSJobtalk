@@ -9,11 +9,11 @@ talk, delivered on April 20, 2026.
 
 ## Abstract
 
-<https://raw.githubusercontent.com/jeksterslab/talks20260420PSUHDFSJobtalk/latex/talks20260420PSUHDFSJobtalk-abstract.pdf>
+[abstract](https://raw.githubusercontent.com/jeksterslab/talks20260420PSUHDFSJobtalk/latex/talks20260420PSUHDFSJobtalk-abstract.pdf)
 
 ## Slide Deck
 
-<https://raw.githubusercontent.com/jeksterslab/talks20260420PSUHDFSJobtalk/latex/talks20260420PSUHDFSJobtalk-slides.pdf>
+[slides](https://raw.githubusercontent.com/jeksterslab/talks20260420PSUHDFSJobtalk/latex/talks20260420PSUHDFSJobtalk-slides.pdf)
 
 ## Papers
 
