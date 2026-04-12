@@ -1,0 +1,154 @@
+\documentclass[jou]{apa7}
+
+\raggedbottom
+\widowpenalty = 10000
+\clubpenalty = 10000
+% \usepackage{lineno}
+% \linenumbers
+
+\usepackage[american]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{blkarray}
+\usepackage{csquotes}
+\usepackage{endnotes}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{changes}
+\usepackage{tabularx}
+
+\setlength {\marginparwidth}{2cm} 
+\usepackage{todonotes}
+
+\usepackage{subcaption}
+
+\usepackage[belowskip = 2pt, aboveskip = 2pt]{caption}
+
+\captionsetup{
+    textfont = {it,normal},
+    labelsep = newline,
+    justification = raggedright,
+    singlelinecheck = false
+}
+
+\captionsetup[subfigure]{
+    size = footnotesize
+}
+
+\usepackage{rotating}
+
+\usepackage{siunitx}
+\sisetup{
+  detect-all,
+  table-number-alignment = center,
+  input-symbols = (),
+  group-digits = false
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLATEX APA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% begin.rcode
+% #| label = "root",
+% #| include = FALSE
+% root <- rprojroot::is_rstudio_project
+%% end.rcode
+
+%% begin.rcode
+% #| label = "knitr",
+% #| include = FALSE,
+% #| file = root$find_file(
+% #|   ".setup",
+% #|   "latex",
+% #|   "r-scripts",
+% #|   "knitr.R"
+% #| )
+%% end.rcode
+
+%% begin.rcode
+% #| label = "biblatex",
+% #| echo = FALSE,
+% #| message = FALSE,
+% #| warning = FALSE,
+% #| results = "asis"
+% if (require("rProject")) {
+%   Bib(
+%     path = dirname(
+%       root$find_file(
+%         "project.Rproj"
+%       )
+%     )
+%   )
+%   cat(
+%     .PreambleBiblatex(
+%       path = root$find_file(
+%         ".setup",
+%         "latex",
+%         "bib"
+%       )
+%     )
+%   )
+% } else {
+%   cat(
+%     .PreambleBiblatexCombined(
+%       path = root$find_file(
+%         ".setup",
+%         "latex",
+%         "bib"
+%       ),
+%       output_path = root$find_file(
+%         ".setup",
+%         "latex"
+%       )
+%     )
+%   )
+% }
+%% end.rcode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% kbordermatrix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% begin.rcode
+% #| label = "kbordermatrix",
+% #| echo = FALSE,
+% #| message = FALSE,
+% #| warning = FALSE,
+% #| results = "asis"
+% cat(
+%   paste0(
+%     "\n",
+%     "\\usepackage{",
+%     root$find_file(
+%       ".setup",
+%       "latex",
+%       "sty",
+%       "kbordermatrix"
+%     ),
+%     "}",
+%     "\n"
+%   )
+% )
+% cat("\n\\renewcommand{\\kbldelim}{(}% Left delimiter")
+% cat("\n\\renewcommand{\\kbrdelim}{)}% Right delimiter")
+%% end.rcode
+
+\title{Quantitative Methods for Dynamic Psychological Processes:\\From Mechanism and Heterogeneity to Usable Tools}
+
+\shorttitle{PSU HDFS Job Talk}
+
+\author{Ivan Jacob Agaloos Pesigan}
+\affiliation{{Edna Bennett Pierce Prevention Research Center, The Pennsylvania State University}}
+
+\leftheader{Pesigan}
+
+\abstract{Psychological processes central to developmental, family, and health research unfold over time, differ meaningfully across people, and are increasingly studied with intensive longitudinal designs. Yet many of the questions that matter most---about mechanism, persistence, coupling, and heterogeneity in change---still outpace the tools available to study them well. In this talk, I present a research program focused on building quantitative methods for dynamic psychological processes and translating them into efficient, reproducible, user-friendly tools for real research. First, I show how continuous-time mediation models can be used to examine how direct, indirect, and total effects unfold across time intervals, and I introduce new effect size measures and approaches to uncertainty quantification for dynamic mediation. Second, I introduce Common and Unique Latent Transition Analysis (CULTA), a framework for modeling alcohol intoxication dynamics that separates stable and situational influences, distinguishes shared from feature-specific variability, and identifies qualitatively distinct risk profiles defined in part by intoxication persistence (inertia). Third, I present MetaVAR, a computationally efficient meta-analytic structural equation modeling framework that moves from person-specific dynamic models to valid population-level inference while preserving first-stage uncertainty, thereby supporting questions about average dynamics, between-person heterogeneity, and cross-parameter covariation in a unified way. Across these projects, I argue that heterogeneity in dynamic processes is not merely noise to average away, but a substantive target of explanation, and that quantitative methods have their greatest impact when they are made usable by the researchers who need them most. I close by outlining future directions aimed at extending this work into scalable, open, and practically usable tools for studying dynamic psychological processes across people, settings, and timescales.}
+
+\begin{document}
+
+\maketitle
+
+\end{document}
