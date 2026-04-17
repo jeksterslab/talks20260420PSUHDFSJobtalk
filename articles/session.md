@@ -60,7 +60,7 @@ cat(system("lscpu", intern = TRUE), sep = "\n")
 #> Core(s) per socket:                      2
 #> Socket(s):                               1
 #> Stepping:                                1
-#> BogoMIPS:                                4890.84
+#> BogoMIPS:                                4890.86
 #> Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid aperfmperf tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves user_shstk clzero xsaveerptr rdpru arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip vaes vpclmulqdq rdpid fsrm
 #> Virtualization:                          AMD-V
 #> Hypervisor vendor:                       Microsoft
@@ -98,7 +98,7 @@ cat(system("lscpu", intern = TRUE), sep = "\n")
 
 cat(system("free -g -h -t", intern = TRUE), sep = "\n")
 #>                total        used        free      shared  buff/cache   available
-#> Mem:            15Gi       1.4Gi       1.4Gi        46Mi        13Gi        14Gi
+#> Mem:            15Gi       1.4Gi       2.0Gi        48Mi        12Gi        14Gi
 #> Swap:          3.0Gi        20Ki       3.0Gi
-#> Total:          18Gi       1.4Gi       4.4Gi
+#> Total:          18Gi       1.4Gi       5.0Gi
 ```
