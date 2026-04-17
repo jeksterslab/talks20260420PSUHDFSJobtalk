@@ -1114,358 +1114,358 @@
 	\insertframenumber/\inserttotalframenumber%
 }
 
-%-------------------------------------------------------------------------------
-\subsection{Extra slides}
-%-------------------------------------------------------------------------------
+% %-------------------------------------------------------------------------------
+% \subsection{Extra slides}
+% %-------------------------------------------------------------------------------
 
-\setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{navigation symbols}{}
 
-\begin{frame}
-	\Huge{\centerline{\usebeamercolor[fg]{frametitle} Extra slides}}
-\end{frame}
+% \begin{frame}
+% 	\Huge{\centerline{\usebeamercolor[fg]{frametitle} Extra slides}}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Continuous-Time Vector Autoregressive Model (CT-VAR: Drift Matrix $\boldsymbol{\Phi}$)}
-	\centering
-	\includegraphics[scale = .70]{.setup/latex/figures/pdf/ct-full-total.pdf}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Continuous-Time Vector Autoregressive Model (CT-VAR: Drift Matrix $\boldsymbol{\Phi}$)}
+% 	\centering
+% 	\includegraphics[scale = .70]{.setup/latex/figures/pdf/ct-full-total.pdf}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Total Effect Decomposition \parencite{Pesigan-Russell-Chow-2025o, Deboeck-Preacher-2015, Ryan-Hamaker-2021}}
-	\begin{figure}
-		\centering
-		\includegraphics[scale = .70]{.setup/latex/figures/pdf/dt-one-two-three-full.pdf}
-	\end{figure}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Total Effect Decomposition \parencite{Pesigan-Russell-Chow-2025o, Deboeck-Preacher-2015, Ryan-Hamaker-2021}}
+% 	\begin{figure}
+% 		\centering
+% 		\includegraphics[scale = .70]{.setup/latex/figures/pdf/dt-one-two-three-full.pdf}
+% 	\end{figure}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Total Effect Decomposition}
-	\centering
-	\small
-	\textcolor{direct}{Blue = direct effect ($\beta_{11} \beta_{11} \beta_{31}$).} \textcolor{indirect}{Red = indirect effect ($\beta_{11} \beta_{21} \beta_{32}$).}
-	\begin{figure}
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.5\textwidth}
-			\centering
-			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
-		\end{subfigure}						
-	\end{figure}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Total Effect Decomposition}
+% 	\centering
+% 	\small
+% 	\textcolor{direct}{Blue = direct effect ($\beta_{11} \beta_{11} \beta_{31}$).} \textcolor{indirect}{Red = indirect effect ($\beta_{11} \beta_{21} \beta_{32}$).}
+% 	\begin{figure}
+% 		\begin{subfigure}{.5\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.5\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
+% 		\end{subfigure}						
+% 	\end{figure}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Total Effect Decomposition}
-	\centering
-	\textcolor{direct}{Blue = direct effects.} \textcolor{indirect}{Red = indirect effects.}
-	\begin{figure}
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-12-31.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-13-31.pdf}
-		\end{subfigure}
+% \begin{frame}
+% 	\frametitle{Total Effect Decomposition}
+% 	\centering
+% 	\textcolor{direct}{Blue = direct effects.} \textcolor{indirect}{Red = indirect effects.}
+% 	\begin{figure}
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-12-31.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-13-31.pdf}
+% 		\end{subfigure}
 																	
-		\medskip
+% 		\medskip
 																	
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-22-32.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-23-32.pdf}
-		\end{subfigure}
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-22-32.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-23-32.pdf}
+% 		\end{subfigure}
 																	
-		\medskip
+% 		\medskip
 																	
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-31-33.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-32-33.pdf}
-		\end{subfigure}%
-		~ 
-		\begin{subfigure}{.333333\textwidth}
-			\centering
-			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-33-33.pdf}
-		\end{subfigure}
-		\footnotesize
-	\end{figure}
-\end{frame}
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-31-33.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-32-33.pdf}
+% 		\end{subfigure}%
+% 		~ 
+% 		\begin{subfigure}{.333333\textwidth}
+% 			\centering
+% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-33-33.pdf}
+% 		\end{subfigure}
+% 		\footnotesize
+% 	\end{figure}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Total Effect Decomposition}
+% \begin{frame}
+% 	\frametitle{Total Effect Decomposition}
 		    
-	Total, Direct, and Indirect Effects:
+% 	Total, Direct, and Indirect Effects:
 		
-	\begin{equation}
-		\mathsf{Total}
-		=
-		\exp{
-			\left(
-			\Delta t
-			\boldsymbol{\Phi}
-			\right)
-			=
-			\boldsymbol{\beta}_{\Delta t}
-		}
-	\end{equation}
-	\begin{equation}
-		\mathsf{Direct}
-		=
-		\exp
-		\left(
-		\Delta t
-		\mathbf{D}_{\mathbf{m}}
-		\boldsymbol{\Phi}
-		\mathbf{D}_{\mathbf{m}}
-		\right)
-	\end{equation}
-	\begin{equation}
-		\mathsf{Indirect}
-		=
-		\mathsf{Total} - \mathsf{Direct} .
-	\end{equation}
+% 	\begin{equation}
+% 		\mathsf{Total}
+% 		=
+% 		\exp{
+% 			\left(
+% 			\Delta t
+% 			\boldsymbol{\Phi}
+% 			\right)
+% 			=
+% 			\boldsymbol{\beta}_{\Delta t}
+% 		}
+% 	\end{equation}
+% 	\begin{equation}
+% 		\mathsf{Direct}
+% 		=
+% 		\exp
+% 		\left(
+% 		\Delta t
+% 		\mathbf{D}_{\mathbf{m}}
+% 		\boldsymbol{\Phi}
+% 		\mathbf{D}_{\mathbf{m}}
+% 		\right)
+% 	\end{equation}
+% 	\begin{equation}
+% 		\mathsf{Indirect}
+% 		=
+% 		\mathsf{Total} - \mathsf{Direct} .
+% 	\end{equation}
 		
-	Standardized Effects: Effect Size Measures
+% 	Standardized Effects: Effect Size Measures
 		
-	\begin{equation}
-		\mathsf{Total}^{\ast}_{i, j}
-		=
-		\mathsf{Total}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) ,
-	\end{equation}
-	\begin{equation}
-		\mathsf{Direct}^{\ast}_{i, j}
-		=
-		\mathsf{Direct}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) , \qquad \mathsf{and}
-	\end{equation}
-	\begin{equation}
-		\mathsf{Indirect}^{\ast}_{i, j} = \mathsf{Total}^{\ast}_{i, j} - \mathsf{Direct}^{\ast}_{i, j}
-	\end{equation}
-\end{frame}
+% 	\begin{equation}
+% 		\mathsf{Total}^{\ast}_{i, j}
+% 		=
+% 		\mathsf{Total}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) ,
+% 	\end{equation}
+% 	\begin{equation}
+% 		\mathsf{Direct}^{\ast}_{i, j}
+% 		=
+% 		\mathsf{Direct}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) , \qquad \mathsf{and}
+% 	\end{equation}
+% 	\begin{equation}
+% 		\mathsf{Indirect}^{\ast}_{i, j} = \mathsf{Total}^{\ast}_{i, j} - \mathsf{Direct}^{\ast}_{i, j}
+% 	\end{equation}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{CT-VAR \parencite{Deboeck-Preacher-2015, Chow-Losardo-Park-etal-2023}}
-	Measurement component:
-	\begin{equation}
-		\begin{gathered}
-			\mathbf{y}_{i, t_{m}}
-			=
-			\boldsymbol{\nu} + \boldsymbol{\Lambda} \boldsymbol{\eta}_{i, t_{m}} + \boldsymbol{\varepsilon}_{i, t_{m}},
-			\indent \boldsymbol{\varepsilon}_{i, t_{m}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Theta} \right)
-		\end{gathered}
-	\end{equation}
-	Dynamic component:
-	\begin{equation}
-		\mathsf{d} \boldsymbol{\eta}_{i, t}
-		=
-		\left( \textcolor{indirect}{\boldsymbol{\Phi}} \boldsymbol{\eta}_{i, t} \right) \mathsf{d}t + \boldsymbol{\Sigma}^{\frac{1}{2}} \mathsf{d} \mathbf{W}_{i, t}
-	\end{equation}
-	Three-variable CT-VAR mediation model:
-	\begin{equation}
-		\mathbf{y}
-		=
-		\left(
-		\begin{array}{c}
-			X \\ M \\ Y \\
-		\end{array}
-		\right) ,
-		\quad \mathsf{and} \quad
-		\boldsymbol{\eta}
-		=
-		\left(
-		\begin{array}{c}
-			\eta_X \\ \eta_M \\ \eta_Y \\
-		\end{array}
-		\right)
-	\end{equation}
-	Integral form:
-	\begin{equation}
-		\boldsymbol{\eta}_{i, t_{{m_{i}}}}
-		=
-		\boldsymbol{\alpha}_{\Delta t_{{m_{i}}}} + \textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}}} \boldsymbol{\eta}_{i, t_{m_{i} - 1}} + \boldsymbol{\zeta}_{i, t_{{m_{i}}}},
-		\indent
-		\boldsymbol{\zeta}_{i, t_{{m_{i}}}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Psi}_{\Delta t_{{m_{i}}}} \right)
-	\end{equation}
-	\begin{equation}
-		\textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}} = \exp \left( \Delta t \boldsymbol{\Phi} \right)}
-	\end{equation}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{CT-VAR \parencite{Deboeck-Preacher-2015, Chow-Losardo-Park-etal-2023}}
+% 	Measurement component:
+% 	\begin{equation}
+% 		\begin{gathered}
+% 			\mathbf{y}_{i, t_{m}}
+% 			=
+% 			\boldsymbol{\nu} + \boldsymbol{\Lambda} \boldsymbol{\eta}_{i, t_{m}} + \boldsymbol{\varepsilon}_{i, t_{m}},
+% 			\indent \boldsymbol{\varepsilon}_{i, t_{m}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Theta} \right)
+% 		\end{gathered}
+% 	\end{equation}
+% 	Dynamic component:
+% 	\begin{equation}
+% 		\mathsf{d} \boldsymbol{\eta}_{i, t}
+% 		=
+% 		\left( \textcolor{indirect}{\boldsymbol{\Phi}} \boldsymbol{\eta}_{i, t} \right) \mathsf{d}t + \boldsymbol{\Sigma}^{\frac{1}{2}} \mathsf{d} \mathbf{W}_{i, t}
+% 	\end{equation}
+% 	Three-variable CT-VAR mediation model:
+% 	\begin{equation}
+% 		\mathbf{y}
+% 		=
+% 		\left(
+% 		\begin{array}{c}
+% 			X \\ M \\ Y \\
+% 		\end{array}
+% 		\right) ,
+% 		\quad \mathsf{and} \quad
+% 		\boldsymbol{\eta}
+% 		=
+% 		\left(
+% 		\begin{array}{c}
+% 			\eta_X \\ \eta_M \\ \eta_Y \\
+% 		\end{array}
+% 		\right)
+% 	\end{equation}
+% 	Integral form:
+% 	\begin{equation}
+% 		\boldsymbol{\eta}_{i, t_{{m_{i}}}}
+% 		=
+% 		\boldsymbol{\alpha}_{\Delta t_{{m_{i}}}} + \textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}}} \boldsymbol{\eta}_{i, t_{m_{i} - 1}} + \boldsymbol{\zeta}_{i, t_{{m_{i}}}},
+% 		\indent
+% 		\boldsymbol{\zeta}_{i, t_{{m_{i}}}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Psi}_{\Delta t_{{m_{i}}}} \right)
+% 	\end{equation}
+% 	\begin{equation}
+% 		\textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}} = \exp \left( \Delta t \boldsymbol{\Phi} \right)}
+% 	\end{equation}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Delta Method Confidence Intervals}
-	We define the delta method following the multivariate central limit theorem. Let $\boldsymbol{\theta}$ be $\mathsf{vec} \left( \boldsymbol{\Phi} \right)$, that is, the elements of the drift matrix $\boldsymbol{\Phi}$ in vector form sorted column-wise. Let $\hat{\boldsymbol{\theta}}$ be $\mathsf{vec} \left( \hat{\boldsymbol{\Phi}} \right)$, that is, the estimates of the elements of the drift matrix. The uncertainty around any functions of the estimates for $\hat{\boldsymbol{\theta}}$ is assumed to be characterized as:
-	\begin{equation}
-		\sqrt{n}
-		\left(
-		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
-		-
-		\mathbf{g} \left( \boldsymbol{\theta} \right)
-		\right)
-		\xrightarrow[]{
-			\mathsf{D}
-		}
-		\mathcal{N}
-		\left(
-		0,
-		\mathbf{J}
-		\boldsymbol{\Gamma}
-		\mathbf{J}^{\prime}
-		\right)
-	\end{equation}
-	where $\mathbf{g}$ is a vector of functions, $\mathbf{J}$ is the matrix of first-order derivatives of the functions in $\mathbf{g}$ with respect to the elements of $\boldsymbol{\theta}$ and $\boldsymbol{\Gamma}$ is the asymptotic variance-covariance matrix of $\hat{\boldsymbol{\theta}}$.
-	The approximate distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$ is given by
-	\begin{equation}
-		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
-		\approx
-		\mathcal{N}
-		\left(
-		\mathbf{g} \left( \boldsymbol{\theta} \right)
-		,
-		n^{-1}
-		\mathbf{J}
-		\boldsymbol{\Gamma}
-		\mathbf{J}^{\prime}
-		\right) .
-	\end{equation}
-	When $\boldsymbol{\Gamma}$ is unknown, by substitution, we can use the estimated sampling variance-covariance matrix of $\hat{\boldsymbol{\theta}}$, that is, $\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)$ for $n^{-1} \boldsymbol{\Gamma}$.
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Delta Method Confidence Intervals}
+% 	We define the delta method following the multivariate central limit theorem. Let $\boldsymbol{\theta}$ be $\mathsf{vec} \left( \boldsymbol{\Phi} \right)$, that is, the elements of the drift matrix $\boldsymbol{\Phi}$ in vector form sorted column-wise. Let $\hat{\boldsymbol{\theta}}$ be $\mathsf{vec} \left( \hat{\boldsymbol{\Phi}} \right)$, that is, the estimates of the elements of the drift matrix. The uncertainty around any functions of the estimates for $\hat{\boldsymbol{\theta}}$ is assumed to be characterized as:
+% 	\begin{equation}
+% 		\sqrt{n}
+% 		\left(
+% 		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
+% 		-
+% 		\mathbf{g} \left( \boldsymbol{\theta} \right)
+% 		\right)
+% 		\xrightarrow[]{
+% 			\mathsf{D}
+% 		}
+% 		\mathcal{N}
+% 		\left(
+% 		0,
+% 		\mathbf{J}
+% 		\boldsymbol{\Gamma}
+% 		\mathbf{J}^{\prime}
+% 		\right)
+% 	\end{equation}
+% 	where $\mathbf{g}$ is a vector of functions, $\mathbf{J}$ is the matrix of first-order derivatives of the functions in $\mathbf{g}$ with respect to the elements of $\boldsymbol{\theta}$ and $\boldsymbol{\Gamma}$ is the asymptotic variance-covariance matrix of $\hat{\boldsymbol{\theta}}$.
+% 	The approximate distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$ is given by
+% 	\begin{equation}
+% 		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
+% 		\approx
+% 		\mathcal{N}
+% 		\left(
+% 		\mathbf{g} \left( \boldsymbol{\theta} \right)
+% 		,
+% 		n^{-1}
+% 		\mathbf{J}
+% 		\boldsymbol{\Gamma}
+% 		\mathbf{J}^{\prime}
+% 		\right) .
+% 	\end{equation}
+% 	When $\boldsymbol{\Gamma}$ is unknown, by substitution, we can use the estimated sampling variance-covariance matrix of $\hat{\boldsymbol{\theta}}$, that is, $\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)$ for $n^{-1} \boldsymbol{\Gamma}$.
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Monte Carlo (MC) Method Confidence Intervals}
-	Based on the asymptotic properties of maximum likelihood estimators, we can assume that they are normally distributed around the population parameters
-	\begin{equation}
-		\hat{\boldsymbol{\theta}}
-		\sim
-		\mathcal{N}
-		\left(
-		\boldsymbol{\theta},
-		\mathbb{V} \left( \hat{\boldsymbol{\theta}} \right)
-		\right) .
-	\end{equation}
-	Using this distributional assumption, a sampling distribution of $\hat{\boldsymbol{\theta}}$ which we refer to as $\hat{\boldsymbol{\theta}}^{\ast}$ can be generated by replacing the population parameters with sample estimates, that is,
-	\begin{equation}
-		\hat{\boldsymbol{\theta}}^{\ast}
-		\sim
-		\mathcal{N}
-		\left(
-		\hat{\boldsymbol{\theta}},
-		\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)
-		\right) .
-	\end{equation}
-	A sampling distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$, which we refer to as $\mathbf{g} \left( \hat{\boldsymbol{\theta}}^{\ast} \right)$, can be generated by using the simulated estimates to calculate $\mathbf{g}$. The standard deviations of the simulated estimates are the SEs. In resampling approaches, it is customary to use the percentiles of the generated distribution as CIs instead of the SEs.
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Monte Carlo (MC) Method Confidence Intervals}
+% 	Based on the asymptotic properties of maximum likelihood estimators, we can assume that they are normally distributed around the population parameters
+% 	\begin{equation}
+% 		\hat{\boldsymbol{\theta}}
+% 		\sim
+% 		\mathcal{N}
+% 		\left(
+% 		\boldsymbol{\theta},
+% 		\mathbb{V} \left( \hat{\boldsymbol{\theta}} \right)
+% 		\right) .
+% 	\end{equation}
+% 	Using this distributional assumption, a sampling distribution of $\hat{\boldsymbol{\theta}}$ which we refer to as $\hat{\boldsymbol{\theta}}^{\ast}$ can be generated by replacing the population parameters with sample estimates, that is,
+% 	\begin{equation}
+% 		\hat{\boldsymbol{\theta}}^{\ast}
+% 		\sim
+% 		\mathcal{N}
+% 		\left(
+% 		\hat{\boldsymbol{\theta}},
+% 		\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)
+% 		\right) .
+% 	\end{equation}
+% 	A sampling distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$, which we refer to as $\mathbf{g} \left( \hat{\boldsymbol{\theta}}^{\ast} \right)$, can be generated by using the simulated estimates to calculate $\mathbf{g}$. The standard deviations of the simulated estimates are the SEs. In resampling approaches, it is customary to use the percentiles of the generated distribution as CIs instead of the SEs.
+% \end{frame}
 
-\begin{frame}
-    \frametitle{Study 1: Illustration Results}
-    \includegraphics[width = 1\textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-illustration-coverage-1.png}
-\end{frame}
+% \begin{frame}
+%     \frametitle{Study 1: Illustration Results}
+%     \includegraphics[width = 1\textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-illustration-coverage-1.png}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{TAC curves for a specific individual}
-	\begin{columns}[c]
-		\column{0.3333333\textwidth}
-		\centering
-		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-01.pdf}
-		\\Wed
-		\column{0.3333333\textwidth}
-		\centering
-		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-02.pdf}
-		\\Thu
-		\column{0.3333333\textwidth}
-		\centering
-		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-03.pdf}
-		\\Fri
-	\end{columns}
-	\begin{columns}[c]
-		\column{0.3333333\textwidth}
-		\centering
-		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-04.pdf}
-		\\Sat
-		\column{0.3333333\textwidth}
-		\centering
-		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-05.pdf}
-		\\Sun
-		\column{0.3333333\textwidth}
-		\centering
-		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-06.pdf}
-		\\Mon
-	\end{columns}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{TAC curves for a specific individual}
+% 	\begin{columns}[c]
+% 		\column{0.3333333\textwidth}
+% 		\centering
+% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-01.pdf}
+% 		\\Wed
+% 		\column{0.3333333\textwidth}
+% 		\centering
+% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-02.pdf}
+% 		\\Thu
+% 		\column{0.3333333\textwidth}
+% 		\centering
+% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-03.pdf}
+% 		\\Fri
+% 	\end{columns}
+% 	\begin{columns}[c]
+% 		\column{0.3333333\textwidth}
+% 		\centering
+% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-04.pdf}
+% 		\\Sat
+% 		\column{0.3333333\textwidth}
+% 		\centering
+% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-05.pdf}
+% 		\\Sun
+% 		\column{0.3333333\textwidth}
+% 		\centering
+% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-06.pdf}
+% 		\\Mon
+% 	\end{columns}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{CUTS component of the CULTA model}
-	\centering
-	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/cuts-wide-2.pdf}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{CUTS component of the CULTA model}
+% 	\centering
+% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/cuts-wide-2.pdf}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{LTA component of the CULTA model}
-	\centering
-	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/culta-details-wide-2.pdf}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{LTA component of the CULTA model}
+% 	\centering
+% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/culta-details-wide-2.pdf}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{CULTA simulation: Information criteria}
-	\centering
-	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-ic-unnamed-chunk-3-1.png}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{CULTA simulation: Information criteria}
+% 	\centering
+% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-ic-unnamed-chunk-3-1.png}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{CULTA simulation: Relative bias}
-	\centering
-	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-lta-est-bias-1.png}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{CULTA simulation: Relative bias}
+% 	\centering
+% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-lta-est-bias-1.png}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Simulation results: MetaVAR is strongest for heterogeneity}
-	\centering
-	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/png/fig-vignettes-manuscript-figures-overview-1.png}
-	\note{
-		\normalsize
-		\begin{itemize}
-			\item The simulation tells me where MetaVAR is most useful. I do not present it as a universal replacement for one-step models. For population averages, the Bayesian multilevel comparator stayed competitive. MetaVAR's clearest advantage was when the scientific target was heterogeneity: how much people differ, and how well we calibrate uncertainty about those differences.
-		\end{itemize}
-	}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Simulation results: MetaVAR is strongest for heterogeneity}
+% 	\centering
+% 	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/png/fig-vignettes-manuscript-figures-overview-1.png}
+% 	\note{
+% 		\normalsize
+% 		\begin{itemize}
+% 			\item The simulation tells me where MetaVAR is most useful. I do not present it as a universal replacement for one-step models. For population averages, the Bayesian multilevel comparator stayed competitive. MetaVAR's clearest advantage was when the scientific target was heterogeneity: how much people differ, and how well we calibrate uncertainty about those differences.
+% 		\end{itemize}
+% 	}
+% \end{frame}
 
-\begin{frame}
-	\frametitle{Empirical illustration: Coupling}
-	\begin{minipage}[c]{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-na-to-pa.pdf}
-	\end{minipage}\hfill
-	\begin{minipage}[c]{0.5\textwidth}
-		\centering
-		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-pa-to-na.pdf}
-	\end{minipage}
-\end{frame}
+% \begin{frame}
+% 	\frametitle{Empirical illustration: Coupling}
+% 	\begin{minipage}[c]{0.5\textwidth}
+% 		\centering
+% 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-na-to-pa.pdf}
+% 	\end{minipage}\hfill
+% 	\begin{minipage}[c]{0.5\textwidth}
+% 		\centering
+% 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-pa-to-na.pdf}
+% 	\end{minipage}
+% \end{frame}
 
-\addtobeamertemplate{navigation symbols}{}{%
-	\usebeamerfont{footline}%
-	\usebeamercolor[fg]{footline}%
-	\hspace{1em}%
-}
+% \addtobeamertemplate{navigation symbols}{}{%
+% 	\usebeamerfont{footline}%
+% 	\usebeamercolor[fg]{footline}%
+% 	\hspace{1em}%
+% }
 
 %-------------------------------------------------------------------------------
 \section{References}
