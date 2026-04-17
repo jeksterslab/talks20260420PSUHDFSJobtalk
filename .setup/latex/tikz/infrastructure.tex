@@ -119,27 +119,27 @@
 		paneltitlegreen/.style={font=\sffamily\bfseries\fontsize{13.4}{15.0}\selectfont, text={green!60!black}},
 		hubtitle/.style={font=\sffamily\bfseries\fontsize{10.6}{12.0}\selectfont, text=navy}
 	]
-	
+		
 	% Bigger canvas
 	\path[draw=none] (-4.2,0.2) rectangle (22.6,9.4);
-	
+		
 	% Panels spread farther apart
 	\node[leftpanel]   (left)   at (0.6,5.0) {};
 	\node[centerpanel] (center) at (9.2,5.0) {};
 	\node[rightpanel]  (right)  at (17.8,5.0) {};
-	
+		
 	% More obvious arrows between panels
 	\draw[panelarrow] ($(left.east)+(0.22,0)$) -- ($(center.west)+(-0.22,0)$);
 	\draw[panelarrow] ($(center.east)+(0.22,0)$) -- ($(right.west)+(-0.22,0)$);
-	
+		
 	% ---------------- Left panel: Distributed estimation ----------------
 	\node[paneltitle, align=center] at ($(left.north)+(0,-0.65)$)
-	{Distributed estimation};
-	
+	{Fit local models at scale};
+		
 	\node[iconcircle] at ($(left.center)+(-1.75,1.25)$) (cpuicon) {};
 	\node[iconcircle] at ($(left.center)+(0,1.25)$) (gpuicon) {};
 	\node[iconcircle] at ($(left.center)+(1.75,1.25)$) (nodeicon) {};
-	
+		
 	% CPU icon
 	\draw[blue, line width=0.7pt, rounded corners=1.2pt]
 	($(cpuicon.center)+(-0.16,-0.16)$) rectangle ($(cpuicon.center)+(0.16,0.16)$);
@@ -155,7 +155,7 @@
 		\draw[blue, line width=0.55pt]
 		($(cpuicon.center)+(\x,-0.22)$) -- ($(cpuicon.center)+(\x,-0.16)$);
 	}
-	
+		
 	% GPU icon
 	\draw[blue, line width=0.7pt, rounded corners=1.2pt]
 	($(gpuicon.center)+(-0.18,-0.14)$) rectangle ($(gpuicon.center)+(0.18,0.14)$);
@@ -163,7 +163,7 @@
 		\filldraw[fill=midblue, draw=blue, line width=0.45pt]
 		($(gpuicon.center)+(\dx,\dy)$) rectangle ++(0.07,0.07);
 	}
-	
+		
 	% Cluster / node icon
 	\foreach \dx in {-0.10,0.02,0.14}{
 		\draw[draw=blue, fill=midblue, line width=0.55pt, rounded corners=0.8pt]
@@ -173,58 +173,58 @@
 		\draw[blue, line width=0.45pt]
 		($(nodeicon.center)+(\dx-0.025,-0.01)$) -- ($(nodeicon.center)+(\dx+0.025,-0.01)$);
 	}
-	
+		
 	\node[minisub, align=center] at ($(cpuicon.center)+(0,-0.9)$) {multi-core\\CPU};
 	\node[minisub, align=center] at ($(gpuicon.center)+(0,-0.78)$) {GPU};
 	\node[minisub, align=center] at ($(nodeicon.center)+(0,-0.95)$) {multi-node\\systems};
-	
+		
 	\node[smalltxt, align=center] at ($(left.center)+(0,-1.15)$)
 	{fit many local models in parallel};
-	
+		
 	\node[smalltxt, align=center] at ($(left.center)+(0,-2.15)$)
-	{person-specific, study-specific,\\or learner-specific estimation};
-	
+	{person-, dyad-, family-,\\or study-specific estimation};
+		
 	% ---------------- Center panel: Synthesis and aggregation ----------------
 	\node[paneltitle, align=center] at ($(center.north)+(0,-0.65)$)
-	{Synthesis and aggregation};
-	
+	{Synthesize evidence rigorously};
+		
 	\node[hubbox] (hub) at ($(center.center)+(0,-0.15)$) {};
 	\node[hubtitle, align=center] at (hub.center)
 	{model outputs\\from many units};
-	
+		
 	\node[smallbox] (param) at ($(center.center)+(-2.15,1.35)$) {};
 	\node[smallbox] (nonparam) at ($(center.center)+(2.15,1.35)$) {};
 	\node[smallbox] (bayes) at ($(center.center)+(-2.15,-1.60)$) {};
 	\node[smallbox] (ensemble) at ($(center.center)+(2.15,-1.60)$) {};
-	
+		
 	\node[smalltxt, align=center] at (param.center)
-	{Parametric\\synthesis};
-	
+	{weight by\\precision};
+		
 	\node[smalltxt, align=center] at (nonparam.center)
-	{Nonparametric\\synthesis};
-	
+	{preserve\\heterogeneity};
+		
 	\node[smalltxt, align=center] at (bayes.center)
-	{Bayesian\\averaging};
-	
+	{compare\\plausible models};
+		
 	\node[smalltxt, align=center] at ($(ensemble.center)$)
-	{Ensemble\\learning};
-	
+	{average across\\models};
+		
 	% \draw[arrow] (hub.north west) -- (param.south east);
 	% \draw[arrow] (hub.north east) -- (nonparam.south west);
 	% \draw[arrow] (hub.south west) -- (bayes.north east);
 	% \draw[arrow] (hub.south east) -- (ensemble.north west);
-	
+		
 	\node[smalltxt, align=center] at ($(center.south)+(0,0.50)$)
-	{combining evidence across\\models, units, and learners};
-	
+	{combining evidence across\\models, units, and data sources};
+		
 	% ---------------- Right panel: Usable research infrastructure ----------------
 	\node[paneltitlegreen, align=center] at ($(right.north)+(0,-0.65)$)
-	{Usable research infrastructure};
-	
+	{Deliver usable tools};
+		
 	\node[greeniconcircle] at ($(right.center)+(-1.75,1.25)$) (conticon) {};
 	\node[greeniconcircle] at ($(right.center)+(0,1.25)$) (softicon) {};
 	\node[greeniconcircle] at ($(right.center)+(1.75,1.25)$) (workicon) {};
-	
+		
 	% Container icon
 	\draw[green, line width=0.7pt, rounded corners=1pt]
 	($(conticon.center)+(-0.17,-0.13)$) rectangle ($(conticon.center)+(0.17,0.13)$);
@@ -232,7 +232,7 @@
 	($(conticon.center)+(-0.17,0)$) -- ($(conticon.center)+(0.17,0)$);
 	\draw[green, line width=0.6pt]
 	($(conticon.center)+(0,0.13)$) -- ($(conticon.center)+(0,-0.13)$);
-	
+		
 	% Software / package icon
 	\draw[green, line width=0.7pt, rounded corners=1pt]
 	($(softicon.center)+(-0.16,-0.16)$) rectangle ($(softicon.center)+(0.16,0.16)$);
@@ -242,7 +242,7 @@
 	($(softicon.center)+(-0.10,0)$) -- ($(softicon.center)+(0.10,0)$);
 	\draw[green, line width=0.6pt]
 	($(softicon.center)+(-0.10,-0.06)$) -- ($(softicon.center)+(0.10,-0.06)$);
-	
+		
 	% Workflow icon
 	\filldraw[fill={green!18}, draw=green, line width=0.55pt]
 	($(workicon.center)+(-0.14,0.08)$) circle (0.045);
@@ -258,21 +258,21 @@
 	($(workicon.center)+(0,0.08)$) -- ($(workicon.center)+(0.14,0.08)$);
 	\draw[green, line width=0.6pt]
 	($(workicon.center)+(0,0.08)$) -- ($(workicon.center)+(0,-0.12)$);
-	
+		
 	\node[minisub, align=center, text={green!60!black}] at ($(conticon.center)+(0,-0.65)$) {containers};
 	\node[minisub, align=center, text={green!60!black}] at ($(softicon.center)+(0,-0.65)$) {software};
 	\node[minisub, align=center, text={green!60!black}] at ($(workicon.center)+(0,-0.65)$) {workflows};
-	
+		
 	\node[smalltxt, align=center] at ($(right.center)+(0,-1.15)$)
-	{reproducible pipelines for real research};
-	
+	{packages, containers,\\and reusable templates};
+		
 	\node[smalltxt, align=center] at ($(right.center)+(0,-2.15)$)
-	{open tools, scalable workflows,\\and decision-relevant summaries};
-	
+	{open tools, scalable workflows,\\and decision-ready summaries};
+		
 	% Bottom strip
 	\node[strip, minimum width=19.4cm] at (9.2,0.90)
 	{\sffamily\fontsize{10.4}{12.0}\selectfont\color{textdark}
-		distributed compute $\rightarrow$ distributed modeling $\rightarrow$ distributed synthesis $\rightarrow$ usable science};
-	
+		local estimation $\rightarrow$ careful synthesis $\rightarrow$ usable collaboration};
+		
 \end{tikzpicture}
 \end{document}

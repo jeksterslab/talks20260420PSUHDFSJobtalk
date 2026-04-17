@@ -1,0 +1,128 @@
+\documentclass[tikz,border=6pt]{standalone}
+
+\usepackage{xcolor}
+\definecolor{myblue}{HTML}{377EB8}
+\definecolor{myred}{HTML}{E41A1C}
+\definecolor{mygray}{HTML}{777777}
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+
+\usepackage{lmodern}
+\SetSymbolFont{letters}{bold}{OML}{cmbr}{bx}{it}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{sansmathfonts}
+
+\begin{document}
+
+% MetaVAR empirical illustration values from the manuscript:
+% mu_NA = 1.4402, mu_PA = 2.5817
+% a11 (NA inertia) = 0.3571, a22 (PA inertia) = 0.3167
+% The trajectories below use a common initial value y0 = 3.2 and
+% evolve according to y_t = mu + phi^t (y0 - mu).
+
+\pgfmathsetmacro{\naMu}{1.4402}
+\pgfmathsetmacro{\paMu}{2.5817}
+\pgfmathsetmacro{\naPhi}{0.3571}
+\pgfmathsetmacro{\paPhi}{0.3167}
+\pgfmathsetmacro{\yZero}{3.2}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        width=9.4cm,
+        height=8.6cm,
+        xlabel={Hours since perturbation},
+        ylabel={Affect level},
+        xmin=0, xmax=8,
+        ymin=1.0, ymax=3.35,
+        xtick={0,2,4,6,8},
+        ytick={1.0,1.5,2.0,2.5,3.0},
+        axis line style={black!70},
+        tick style={black!70},
+        tick label style={font=\small},
+        label style={font=\small},
+        grid=major,
+        grid style={dashed, gray!30},
+        legend style={
+            draw=none,
+            fill=none,
+            font=\small,
+            at={(0.02,0.98)},
+            anchor=north west,
+            row sep=1pt,
+        },
+        clip=false,
+    ]
+        % Set-point reference lines
+        \addplot[
+            color=myblue,
+            dashed,
+            line width=0.9pt,
+            domain=0:8,
+            forget plot
+        ] {\naMu};
+
+        \addplot[
+            color=myred,
+            dashed,
+            line width=0.9pt,
+            domain=0:8,
+            forget plot
+        ] {\paMu};
+
+        % NA trajectory
+        \addplot[
+            color=myblue,
+            line width=1.3pt,
+            domain=0:8,
+            samples=200,
+        ] {\naMu + (\yZero - \naMu) * (\naPhi^x)};
+        \addlegendentry{NA}
+
+        % PA trajectory
+        \addplot[
+            color=myred,
+            line width=1.3pt,
+            domain=0:8,
+            samples=200,
+        ] {\paMu + (\yZero - \paMu) * (\paPhi^x)};
+        \addlegendentry{PA}
+
+        % Common starting value
+        \addplot[
+            only marks,
+            mark=*,
+            mark size=1.8pt,
+            color=black
+        ] coordinates {(0,\yZero)};
+
+        % Labels for set points
+        \node[
+            anchor=west,
+            text=myred,
+            font=\small,
+            fill=white,
+            inner sep=1.5pt,
+        ] at (axis cs:6.2,\paMu) {PA set point = 2.58};
+
+        \node[
+            anchor=west,
+            text=myblue,
+            font=\small,
+            fill=white,
+            inner sep=1.5pt,
+        ] at (axis cs:6.2,\naMu) {NA set point = 1.44};
+
+        % Small annotation for inertia ordering
+        \node[
+            anchor=south east,
+            align=right,
+            font=\scriptsize,
+            text=mygray,
+            fill=white,
+            inner sep=2pt,
+        ] at (axis cs:7.8,3.28) {NA inertia = 0.357\\PA inertia = 0.317};
+    \end{axis}
+\end{tikzpicture}
+\end{document}

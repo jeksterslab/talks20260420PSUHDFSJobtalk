@@ -71,7 +71,7 @@
 	% Core
 	\node[core] (core) at (9,5.2) {};
 	\node[coretitle, align=center, text width=10cm] at ($(core.center)+(0,1.18)$) {Dynamic synthesis platform};
-	\node[coretxt] at ($(core.center)+(0,0.45)$) {person-specific dynamic signatures};
+	\node[coretxt] at ($(core.center)+(0,0.45)$) {person-specific dynamic phenotypes};
 	\node[coretxt] at ($(core.center)+(0,-0.05)$) {$\downarrow$};
 	\node[coretxt] at ($(core.center)+(0,-0.55)$) {uncertainty-aware synthesis};
 	\node[coretxt] at ($(core.center)+(0,-1.05)$) {$\downarrow$};
@@ -126,28 +126,28 @@
 	
 	% Box text
 	\node[boxtitle, anchor=west, align=left]
-	at ($(harm.north west)+(1.18,-0.36)$) {Harmonization};
+	at ($(harm.north west)+(1.18,-0.5)$) {People and contexts};
 	\node[smalltxt, anchor=west, align=left]
-	at ($(harm.north west)+(1.18,-1.00)$)
-	{across studies, samples,\\ecological settings, and designs};
+	at ($(harm.north west)+(1.18,-1.65)$)
+	{from within-person dynamics\\to dyads, families, and studies,\\across home, school, work, peers,\\and daily life};
 	
 	\node[boxtitle, anchor=west, align=left]
-	at ($(integrate.north west)+(1.18,-0.36)$) {Integration};
+	at ($(integrate.north west)+(1.18,-0.5)$) {Linked data streams};
 	\node[smalltxt, anchor=west, align=left]
-	at ($(integrate.north west)+(1.18,-1.00)$)
-	{across self-report, sensors,\\physiology, and passive data};
+	at ($(integrate.north west)+(1.18,-1.5)$)
+	{linking self-report, wearables,\\physiology, passive data,\\and electronic health records};
 	
 	\node[boxtitle, anchor=west, align=left]
-	at ($(models.north west)+(1.18,-0.36)$) {Richer dynamics};
+	at ($(models.north west)+(1.18,-0.5)$) {Broader dynamic models};
 	\node[smalltxt, anchor=west, align=left]
-	at ($(models.north west)+(1.18,-1.50)$)
-	{linear/nonlinear,\\parametric/nonparametric\\(e.g., machine learning),\\time-invariant/time-varying};
+	at ($(models.north west)+(1.18,-1.5)$)
+	{TVEM, latent transition models,\\dyadic models,\\continuous-time models};
 	
 	\node[boxtitle, anchor=west, align=left]
-	at ($(targets.north west)+(1.18,-0.36)$) {Substantive targets};
+	at ($(targets.north west)+(1.18,-0.50)$) {Substantive targets};
 	\node[smalltxt, anchor=west, align=left]
-	at ($(targets.north west)+(1.18,-1.25)$)
-	{risk, resilience, outcomes,\\and intervention-relevant\\dynamic signatures};
+	at ($(targets.north west)+(1.18,-1.50)$)
+	{family stress spillover,\\affective recovery, sleep rhythms,\\and daily regulation};
 	
 	% Arrows
 	\draw[arrow] (harm.east) -- ($(core.west)+(0,1.0)$);

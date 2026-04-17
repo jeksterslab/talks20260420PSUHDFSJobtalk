@@ -24,7 +24,7 @@ To build the Apptainer/Singularity image file (`talks20260420psuhdfsjobtalk.sif`
 run the following.
 
 ```bash
-apptainer pull talks20260420psuhdfsjobtalk.sif docker://ijapesigan/docs@sha256:24fe5d2f8a540bc3faa7f36b64774f6220e77433bfce83ea8ebb03e40b47c518
+apptainer pull talks20260420psuhdfsjobtalk.sif docker://ijapesigan/docs@sha256:fb4f25c97cca10542f884da016ac029b8c098e5e986fd6da9699db3a4b0054f3
 ```
 
 ## RStudio IDE Docker Container
@@ -36,7 +36,7 @@ To facilitate exploration of the package, we created a Docker container based on
 To launch `Rstudio Server`, run the following.
 
 ```bash
-docker run --rm -ti -e PASSWORD=yourpassword -p 127.0.0.1:8787:8787 ijapesigan/docs@sha256:24fe5d2f8a540bc3faa7f36b64774f6220e77433bfce83ea8ebb03e40b47c518
+docker run --rm -ti -e PASSWORD=yourpassword -p 127.0.0.1:8787:8787 ijapesigan/docs@sha256:fb4f25c97cca10542f884da016ac029b8c098e5e986fd6da9699db3a4b0054f3
 ```
 
 Open `http://localhost:8787` on your web browser to launch `Rstudio Server`.

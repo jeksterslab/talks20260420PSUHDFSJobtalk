@@ -1,0 +1,104 @@
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage{amsmath}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usetikzlibrary{arrows.meta,positioning,calc}
+
+\definecolor{myblue}{HTML}{377EB8}
+\definecolor{myred}{HTML}{E41A1C}
+\definecolor{myviolet}{HTML}{984EA3}
+
+\begin{document}
+
+\begin{tikzpicture}[
+		x=0.95cm,
+		y=0.95cm,
+		>=Latex,
+		line cap=round,
+		line join=round,
+		eventdot1/.style={circle,fill=myblue,draw=myblue,inner sep=1.6pt},
+		eventdot2/.style={circle,fill=myred,draw=myred,inner sep=1.6pt},
+		note/.style={font=\scriptsize,align=center},
+		paneltitle/.style={font=\bfseries},
+		guide/.style={densely dashed,gray!55},
+		baseline/.style={dashed,gray!55},
+		flow/.style={-{Latex[length=3mm,width=2mm]},very thick,draw=myviolet}
+	]
+	
+	% Shared times
+	\coordinate (tm1) at (1,0);
+	\coordinate (tt)  at (4.5,0);
+	\coordinate (tp1) at (8,0);
+	
+	% Title
+	\node[font=\bfseries\large] at (4.5,7.95) {PA $\rightarrow$ NA coupling};
+	\node[note,text=myviolet] at (4.5,7.35) {higher PA predicts lower later NA \quad $(a_{12}=-0.0593)$};
+	
+	% Panel boxes
+	\draw[thick,rounded corners=2pt] (0,4.2) rectangle (9,6.7);
+	\draw[thick,rounded corners=2pt] (0,0.7) rectangle (9,3.2);
+	
+	% Panel labels
+	\node[anchor=east,paneltitle,text=myred]  at (-0.25,5.45) {PA};
+	\node[anchor=east,paneltitle,text=myblue] at (-0.25,1.95) {NA};
+	
+	% Usual levels
+	\draw[baseline] (0,5.2) -- (9,5.2);
+	\draw[baseline] (0,1.7) -- (9,1.7);
+	\node[anchor=west,font=\scriptsize,gray!75] at (9.1,5.2) {PA set point};
+	\node[anchor=west,font=\scriptsize,gray!75] at (9.1,1.7) {NA set point};
+	
+	% Vertical time guides
+	\draw[guide] (4.5,0.7) -- (4.5,6.7);
+	\draw[guide] (8,0.7) -- (8,6.7);
+	
+	% Time labels
+	\node[font=\small] at (1,0.22) {$t-1$};
+	\node[font=\small] at (4.5,0.22) {$t$};
+	\node[font=\small] at (8,0.22) {$t+1$};
+	
+	% PA trajectory: spike then partial persistence
+	\draw[very thick,myred]
+	plot[smooth] coordinates {
+		(0.5,5.18)
+		(2.6,5.2)
+		(4.5,6.00)
+		(6.1,5.62)
+		(8.0,5.42)
+		(8.55,5.33)
+	};
+	
+	% NA trajectory: later decrease
+	\draw[very thick,myblue]
+	plot[smooth] coordinates {
+		(0.5,1.73)
+		(2.6,1.72)
+		(4.5,1.70)
+		(6.1,1.51)
+		(8.0,1.59)
+		(8.55,1.63)
+	};
+	
+	% Key points
+	\node[eventdot2] (paspike) at (4.5,6.00) {};
+	\node[eventdot1] (nadrop) at (6.1,1.51) {};
+	
+	% Local annotations
+	\node[note,anchor=south,text=myred] at (4.5,6.10)
+	{PA spike};
+	\node[note,anchor=west,text=myblue] at (6.28,1.36)
+	{later NA decrease};
+	
+	% Cross-panel arrow
+	\draw[flow] ($(paspike)+(0.12,-0.15)$) to[out=-78,in=90] ($(nadrop)+(-0.08,0.10)$);
+	\node[note,text=myviolet] at (5.65,4.48) {negative coupling};
+	
+	% Explanatory captions
+	\node[note] at (2.85,7.05)
+	{Positive affect is higher than usual at time $t$};
+	\node[note] at (2.0,3.55)
+	{Negative affect is lower afterward};
+	
+\end{tikzpicture}
+
+\end{document}

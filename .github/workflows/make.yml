@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ijapesigan/docs@sha256:24fe5d2f8a540bc3faa7f36b64774f6220e77433bfce83ea8ebb03e40b47c518
+      image: ijapesigan/docs@sha256:fb4f25c97cca10542f884da016ac029b8c098e5e986fd6da9699db3a4b0054f3
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     permissions:

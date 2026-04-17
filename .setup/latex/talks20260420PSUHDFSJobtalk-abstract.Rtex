@@ -136,7 +136,7 @@
 % cat("\n\\renewcommand{\\kbrdelim}{)}% Right delimiter")
 %% end.rcode
 
-\title{Quantitative Methods for Dynamic Psychological Processes:\\From Mechanism and Heterogeneity to Usable Tools}
+\title{Addressing Mechanisms and Heterogeneity in Change\\with Usable Tools}
 
 \shorttitle{PSU HDFS Job Talk}
 
@@ -145,7 +145,7 @@
 
 \leftheader{Pesigan}
 
-\abstract{Psychological processes central to developmental, family, and health research unfold over time, differ meaningfully across people, and are increasingly studied with intensive longitudinal designs. Yet many of the questions that matter most---about mechanism, persistence, coupling, and heterogeneity in change---still outpace the tools available to study them well. In this talk, I present a research program focused on building quantitative methods for dynamic psychological processes and translating them into efficient, reproducible, user-friendly tools for real research. First, I show how continuous-time mediation models can be used to examine how direct, indirect, and total effects unfold across time intervals, and I introduce new effect size measures and approaches to uncertainty quantification for dynamic mediation. Second, I introduce Common and Unique Latent Transition Analysis (CULTA), a framework for modeling alcohol intoxication dynamics that separates stable and situational influences, distinguishes shared from feature-specific variability, and identifies qualitatively distinct risk profiles defined in part by intoxication persistence (inertia). Third, I present MetaVAR, a computationally efficient meta-analytic structural equation modeling framework that moves from person-specific dynamic models to valid population-level inference while preserving first-stage uncertainty, thereby supporting questions about average dynamics, between-person heterogeneity, and cross-parameter covariation in a unified way. Across these projects, I argue that heterogeneity in dynamic processes is not merely noise to average away, but a substantive target of explanation, and that quantitative methods have their greatest impact when they are made usable by the researchers who need them most. I close by outlining future directions aimed at extending this work into scalable, open, and practically usable tools for studying dynamic psychological processes across people, settings, and timescales.}
+\abstract{Psychological, behavioral, and health processes unfold over time and differ meaningfully across people. In this talk, I present a research program aimed at making dynamic methods more usable for substantive research. I briefly introduce work on continuous-time mediation and on the common and unique latent transition analysis model (CULTA), a model for separating stable and situational influences in alcohol intoxication dynamics. I then focus on MetaVAR, a scalable framework that moves from person-specific dynamic models to valid population-level inference. MetaVAR makes it possible to study average dynamics, between-person heterogeneity, and cross-parameter covariation in a single framework, helping researchers ask not only what changes on average, but how dynamic processes differ across people. Across studies, I treat heterogeneity not as noise to be averaged away, but as a substantive target of explanation, and I close by outlining future directions for building scalable, open, and usable tools for studying dynamic processes across people, settings, and timescales.}
 
 \begin{document}
 
