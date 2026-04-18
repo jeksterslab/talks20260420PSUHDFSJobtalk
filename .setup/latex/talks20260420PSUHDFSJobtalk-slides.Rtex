@@ -46,9 +46,9 @@
 \setbeamerfont{institute}{size=\footnotesize}
 \setbeamerfont{date}{size=\footnotesize}
 
-\setbeameroption{hide notes} % Only slides
+%\setbeameroption{hide notes} % Only slides
 %\setbeameroption{show only notes} % Only notes
-%\setbeameroption{show notes on second screen=right} % Both
+\setbeameroption{show notes on second screen=right} % Both
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLATEX APA
@@ -139,16 +139,15 @@
 \begin{frame}[plain]
 	\titlepage
 	\note{
-		\small
+		\scriptsize
 		\begin{itemize}
 			\item Good morning, and thank you for the opportunity to be here.
-			\item My talk is titled, \emph{Addressing Mechanisms and Heterogeneity in Change with Usable Tools}.
-			\item At the center of my research program is a simple goal: to understand dynamic processes in development, family life, and health in ways that are both substantively meaningful and methodologically usable.
-			\item In particular, I study how change unfolds over time, how people differ in those processes, and how we can build tools that help researchers study those questions well.
-			\item What draws me to HDFS is that these questions are inherently contextual and multilevel. They show up in individuals, relationships, families, and everyday settings, and they require methods that can capture that complexity without losing interpretability.
+			\item At the center of my research program is a simple goal: to understand \textbf{dynamic processes} in \textit{development}, \textit{family life}, and \textit{health} in ways that are \textbf{substantively meaningful} and \textbf{methodologically usable}.
+			\item In particular, I study \textit{how change unfolds over time}, \textit{how people differ in those processes}, and \textit{how we can build tools that help researchers study those questions well}.
+			\item What draws me to HDFS is that these questions are inherently \textbf{contextual} and \textbf{multilevel}, showing up in \textit{individuals}, \textit{relationships}, \textit{families}, and \textit{everyday} settings.
 			\item Today, I will walk through three recent studies that reflect that agenda.
-			\item Across them, the common thread is not methodology for its own sake, but methodology that helps us answer important substantive questions about development, behavior, and health.
-			\item I will end by sharing a few directions I am especially excited to pursue in a place like Penn State HDFS.
+			\item Across them, the common thread is \textbf{methodology in service of substantive questions}.
+			\item I will end with a few future directions I would be especially excited to pursue at Penn State HDFS.
 		\end{itemize}
 	}
 \end{frame}
@@ -225,10 +224,10 @@
         \footnotesize
         \begin{itemize}
             \item Before I get into the studies, I want to briefly situate the kind of work I do and how I was trained for it.
-            \item At Ateneo de Manila University, I built my foundation in psychology, with strong grounding in development, context, and teaching. My mentor there, Liane Pe\~na-Alampay, is a Penn State HDFS alumna, so that connection makes being here especially meaningful to me.
-            \item At Ateneo, I also had the chance to teach courses in statistics, psychometrics, and psychology. That experience shaped how I think about methods: not as technical exercises on their own, but as tools that need to be explainable, useful, and connected to substantive questions.
-            \item At the University of Macau, working with Shu Fai Cheung, I deepened my training in structural equation modeling, meta-analysis, and statistical computation.
-            \item Then here at Penn State, through PAMT and my work with Sy-Miin Chow and Michael Russell, I extended that foundation into dynamic models and intensive longitudinal data, especially in applications tied to health and behavior in everyday life.
+            \item At Ateneo de Manila University, I built my foundation in \textbf{psychology}, with strong grounding in \textit{development}, \textit{context}, and \textit{teaching}. My mentor there, Liane Pe\~na-Alampay, is a Penn State HDFS alumna, so that connection makes being here especially meaningful to me.
+            \item At Ateneo, I also had the chance to \textbf{teach courses} in statistics, psychometrics, and psychology. That experience shaped how I think about methods: not as ends in themselves, but as tools that should be explainable, useful, and connected to substantive questions.
+            \item At the University of Macau, working with Shu Fai Cheung, I deepened my training in \textbf{structural equation modeling}, \textbf{meta-analysis}, and \textbf{statistical computation}.
+            \item Then here at Penn State, through PAMT and my work with Sy-Miin Chow and Michael Russell, I extended that foundation into \textbf{dynamic models} and \textbf{intensive longitudinal data}, especially in applications tied to \textit{health} and \textit{behavior} in everyday life.
             \item Together, those experiences shaped the kind of research program I want to build: one that brings developmental science, quantitative methods, and dynamic modeling together to study how change unfolds over time, how it persists, how connected processes influence one another, and how to develop rigorous, reproducible, and genuinely usable tools for substantive researchers.
             \item So before I get into the three studies, I want to start with one simple intuition that ties the whole talk together.
         \end{itemize}
@@ -261,7 +260,7 @@
         \normalsize
         \begin{itemize}
             \item The first intuition I want to put on the table is inertia.
-            \item A lot of the processes we care about in HDFS do not reset from one moment to the next. What happened yesterday, or even a few hours ago, can still shape what happens today.
+            \item A lot of the processes we care about in HDFS \textbf{do not reset from one moment to the next}. What happened yesterday, or even a few hours ago, can still shape what happens today.
             \item That basic idea is what I mean by \textbf{inertia}: how much the past carries forward into the present.
         \end{itemize}
     }
@@ -499,21 +498,24 @@
 	\end{minipage}\hfill
 	\vspace{0em}
 	\begin{itemize}
-        \tiny
+		\tiny
 		\item \url{https://CRAN.R-project.org/package=cTMed}
 		\item \url{https://CRAN.R-project.org/package=simStateSpace}
 		\item \url{https://CRAN.R-project.org/package=bootStateSpace}
 	\end{itemize}
-    \note{
-        \footnotesize
-        \begin{itemize}
-            \item This slide highlights the three main contributions of Study 1.
-            \item First, I introduce standardized total, direct, and indirect effects for continuous-time mediation, so the results are scale-free and easier to interpret across studies.
-            \item Second, I develop an inference framework for uncertainty quantification, using delta, Monte Carlo, and parametric bootstrap methods to obtain standard errors, confidence intervals, and regions of significance across time.
-            \item Third, I translate those ideas into the open-source \texttt{cTMed} package, so the methods are not just theoretically available, but practically usable.
-            \item So the contribution is not only methodological. It is also translational: it gives researchers a way to estimate, interpret, and visualize dynamic mediation effects in practice.
-        \end{itemize}
-    }
+	\note{
+		\footnotesize
+		\begin{itemize}
+			\item This slide highlights the three main contributions of Study 1, using a simple example: \textbf{stress} affecting \textbf{mood} through \textbf{coping}.     
+			\item The key idea is that in continuous-time mediation, we ask not just whether coping mediates the effect of stress on mood, but \textbf{how that mediation unfolds across time}.      
+			\item Right after a stressful event, the effect on mood may be mostly direct; a little later, coping may begin to carry more of that effect.
+			\item So the direct, indirect, and total effects are \textbf{time-dependent}, not fixed.
+			\item My first contribution is introducing \textbf{standardized} total, direct, and indirect effects.
+			\item My second is \textbf{uncertainty quantification} across time using delta, Monte Carlo, and parametric bootstrap methods.
+			\item My third is implementing these ideas in the open-source \texttt{cTMed} package.   
+			\item So the broader payoff is a practical way to study \textbf{when an effect is immediate, when it becomes mediated, and how it evolves over time}.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -521,17 +523,17 @@
 	\begin{minipage}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/total-effect-centrality.pdf}
-						
+										
 		\vspace{0.3em}
-						
+										
 		{\scriptsize \textbf{Total effect centrality}\\ \tiny Which variable matters most for shaping the rest of the system over time?}
 	\end{minipage}\hfill
 	\begin{minipage}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/indirect-effect-centrality.pdf}
-						
+										
 		\vspace{0.3em}
-						
+										
 		{\scriptsize \textbf{Indirect effect centrality}\\ \tiny Which variable matters most as the pathway through which effects spread over time?}
 	\end{minipage}\hfill
 	\vspace{0em}
@@ -548,23 +550,24 @@
 				align=center
 			] {%
 				\normalsize
-                \textcolor{indirect}{This framework can also be extended from single mediated pathways to \textbf{system-level summaries} of how effects spread through dynamic networks over time.}
+				\textcolor{indirect}{This framework can also be extended from single mediated pathways to \textbf{system-level summaries} of how effects spread through dynamic networks over time.}
 			};
 		\end{tikzpicture}
 	\end{center}
-    \tiny Ongoing work on person-specific affect networks: Pesigan, Russell, Chow, Fisher, \& Barbara L. Fredrickson, invited submission to an \textit{Emotion} special issue.
-    \note{
-        \scriptsize
-        \begin{itemize}
-            \item One reason I am excited about this work is that it opens up a broader systems perspective.
-            \item Up to this point, I have framed mediation one pathway at a time. But many HDFS questions are really about systems, not isolated paths.
-            \item Once we can estimate total, direct, and indirect effects across time intervals, we can ask which variables have the broadest downstream influence and which variables act as conduits through which effects spread.
-            \item That is one direction I am now pursuing in ongoing work on person-specific affect networks during meditation training.
-            \item So even though Study 1 focuses on mediation, the broader payoff is a framework for identifying leverage points in dynamic systems.
-            \item Study 1 shows that mediation in dynamic systems is not a single number at a single lag, but a process that unfolds across time---and that we can now estimate, interpret, and visualize that process with usable tools.
-            \item Study 2 picks up a different side of the same broader agenda: not just how dynamic effects unfold, but how qualitatively different dynamic patterns emerge across people.
-        \end{itemize}
-    }
+	\tiny Ongoing work on person-specific affect networks: Pesigan, Russell, Chow, Fisher, \& Barbara L. Fredrickson, invited submission to an \textit{Emotion} special issue.
+	\note{
+		\tiny
+		\begin{itemize}
+			\item One reason I am excited about this work is that it opens up a broader systems perspective.
+			\item Study 1 focused on mediation one pathway at a time, but many substantive questions are really about how an \textbf{entire affective system reorganizes} over time.
+			\item That is the idea behind an ongoing project on \textbf{person-specific affect networks during meditation training}, across baseline, intervention, and follow-up.
+			\item Here, \textbf{total-effect centrality} asks which emotion has the \textit{broadest downstream} influence, and \textbf{indirect-effect centrality} asks which emotion serves as a key \textit{conduit} through which effects spread.
+			\item Because the model is continuous-time, we can examine those roles across \textbf{multiple timescales}---from short-term ripple effects to longer-horizon accumulation.
+			\item And because this is an intervention study, we can link that reorganization to \textbf{practice dose} and to \textbf{follow-up affective functioning and well-being}.
+			\item So the broader payoff of Study 1 is a framework for turning complex dynamics into interpretable summaries that show \textbf{which variables have the widest downstream influence and which variables serve as the main pathways through which effects spread over time}.
+			\item Study 2 then shifts to a related question: how qualitatively different dynamic patterns emerge across people.
+		\end{itemize}
+	}
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -711,7 +714,7 @@
     \note{
         \normalsize
         \begin{itemize}
-            \item A TAC curve can be summarized by peak, rise rate, fall rate, and duration.
+            \item Here, the key data are \textbf{repeated day-specific TAC curves}: across the monitoring period, each participant can contribute multiple drinking-day curves, and from each curve we extract features like peak, rise rate, fall rate, and duration.
             \item But once we do that, a new question appears: are we looking at one common intoxication process, feature-specific expressions of intoxication, or both?
             \item And beyond that, does intoxication carry over across days?
             \item So the substantive question becomes not just how intoxicated this day was, but what kind of drinking pattern it reflects and how stable that pattern is over time.
@@ -1114,358 +1117,358 @@
 	\insertframenumber/\inserttotalframenumber%
 }
 
-% %-------------------------------------------------------------------------------
-% \subsection{Extra slides}
-% %-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\subsection{Extra slides}
+%-------------------------------------------------------------------------------
 
-% \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{navigation symbols}{}
 
-% \begin{frame}
-% 	\Huge{\centerline{\usebeamercolor[fg]{frametitle} Extra slides}}
-% \end{frame}
+\begin{frame}
+	\Huge{\centerline{\usebeamercolor[fg]{frametitle} Extra slides}}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Continuous-Time Vector Autoregressive Model (CT-VAR: Drift Matrix $\boldsymbol{\Phi}$)}
-% 	\centering
-% 	\includegraphics[scale = .70]{.setup/latex/figures/pdf/ct-full-total.pdf}
-% \end{frame}
+\begin{frame}
+	\frametitle{Continuous-Time Vector Autoregressive Model (CT-VAR: Drift Matrix $\boldsymbol{\Phi}$)}
+	\centering
+	\includegraphics[scale = .70]{.setup/latex/figures/pdf/ct-full-total.pdf}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Total Effect Decomposition \parencite{Pesigan-Russell-Chow-2025o, Deboeck-Preacher-2015, Ryan-Hamaker-2021}}
-% 	\begin{figure}
-% 		\centering
-% 		\includegraphics[scale = .70]{.setup/latex/figures/pdf/dt-one-two-three-full.pdf}
-% 	\end{figure}
-% \end{frame}
+\begin{frame}
+	\frametitle{Total Effect Decomposition \parencite{Pesigan-Russell-Chow-2025o, Deboeck-Preacher-2015, Ryan-Hamaker-2021}}
+	\begin{figure}
+		\centering
+		\includegraphics[scale = .70]{.setup/latex/figures/pdf/dt-one-two-three-full.pdf}
+	\end{figure}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Total Effect Decomposition}
-% 	\centering
-% 	\small
-% 	\textcolor{direct}{Blue = direct effect ($\beta_{11} \beta_{11} \beta_{31}$).} \textcolor{indirect}{Red = indirect effect ($\beta_{11} \beta_{21} \beta_{32}$).}
-% 	\begin{figure}
-% 		\begin{subfigure}{.5\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.5\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
-% 		\end{subfigure}						
-% 	\end{figure}
-% \end{frame}
+\begin{frame}
+	\frametitle{Total Effect Decomposition}
+	\centering
+	\small
+	\textcolor{direct}{Blue = direct effect ($\beta_{11} \beta_{11} \beta_{31}$).} \textcolor{indirect}{Red = indirect effect ($\beta_{11} \beta_{21} \beta_{32}$).}
+	\begin{figure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[scale = .65]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
+		\end{subfigure}						
+	\end{figure}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Total Effect Decomposition}
-% 	\centering
-% 	\textcolor{direct}{Blue = direct effects.} \textcolor{indirect}{Red = indirect effects.}
-% 	\begin{figure}
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-12-31.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-13-31.pdf}
-% 		\end{subfigure}
+\begin{frame}
+	\frametitle{Total Effect Decomposition}
+	\centering
+	\textcolor{direct}{Blue = direct effects.} \textcolor{indirect}{Red = indirect effects.}
+	\begin{figure}
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-11-31.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-12-31.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-13-31.pdf}
+		\end{subfigure}
 																	
-% 		\medskip
+		\medskip
 																	
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-22-32.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-23-32.pdf}
-% 		\end{subfigure}
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-22-32.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-23-32.pdf}
+		\end{subfigure}
 																	
-% 		\medskip
+		\medskip
 																	
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-31-33.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-32-33.pdf}
-% 		\end{subfigure}%
-% 		~ 
-% 		\begin{subfigure}{.333333\textwidth}
-% 			\centering
-% 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-33-33.pdf}
-% 		\end{subfigure}
-% 		\footnotesize
-% 	\end{figure}
-% \end{frame}
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-31-33.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-21-32-33.pdf}
+		\end{subfigure}%
+		~ 
+		\begin{subfigure}{.333333\textwidth}
+			\centering
+			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-33-33.pdf}
+		\end{subfigure}
+		\footnotesize
+	\end{figure}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Total Effect Decomposition}
+\begin{frame}
+	\frametitle{Total Effect Decomposition}
 		    
-% 	Total, Direct, and Indirect Effects:
+	Total, Direct, and Indirect Effects:
 		
-% 	\begin{equation}
-% 		\mathsf{Total}
-% 		=
-% 		\exp{
-% 			\left(
-% 			\Delta t
-% 			\boldsymbol{\Phi}
-% 			\right)
-% 			=
-% 			\boldsymbol{\beta}_{\Delta t}
-% 		}
-% 	\end{equation}
-% 	\begin{equation}
-% 		\mathsf{Direct}
-% 		=
-% 		\exp
-% 		\left(
-% 		\Delta t
-% 		\mathbf{D}_{\mathbf{m}}
-% 		\boldsymbol{\Phi}
-% 		\mathbf{D}_{\mathbf{m}}
-% 		\right)
-% 	\end{equation}
-% 	\begin{equation}
-% 		\mathsf{Indirect}
-% 		=
-% 		\mathsf{Total} - \mathsf{Direct} .
-% 	\end{equation}
+	\begin{equation}
+		\mathsf{Total}
+		=
+		\exp{
+			\left(
+			\Delta t
+			\boldsymbol{\Phi}
+			\right)
+			=
+			\boldsymbol{\beta}_{\Delta t}
+		}
+	\end{equation}
+	\begin{equation}
+		\mathsf{Direct}
+		=
+		\exp
+		\left(
+		\Delta t
+		\mathbf{D}_{\mathbf{m}}
+		\boldsymbol{\Phi}
+		\mathbf{D}_{\mathbf{m}}
+		\right)
+	\end{equation}
+	\begin{equation}
+		\mathsf{Indirect}
+		=
+		\mathsf{Total} - \mathsf{Direct} .
+	\end{equation}
 		
-% 	Standardized Effects: Effect Size Measures
+	Standardized Effects: Effect Size Measures
 		
-% 	\begin{equation}
-% 		\mathsf{Total}^{\ast}_{i, j}
-% 		=
-% 		\mathsf{Total}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) ,
-% 	\end{equation}
-% 	\begin{equation}
-% 		\mathsf{Direct}^{\ast}_{i, j}
-% 		=
-% 		\mathsf{Direct}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) , \qquad \mathsf{and}
-% 	\end{equation}
-% 	\begin{equation}
-% 		\mathsf{Indirect}^{\ast}_{i, j} = \mathsf{Total}^{\ast}_{i, j} - \mathsf{Direct}^{\ast}_{i, j}
-% 	\end{equation}
-% \end{frame}
+	\begin{equation}
+		\mathsf{Total}^{\ast}_{i, j}
+		=
+		\mathsf{Total}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) ,
+	\end{equation}
+	\begin{equation}
+		\mathsf{Direct}^{\ast}_{i, j}
+		=
+		\mathsf{Direct}_{i, j} \left( \frac{\sigma_{{x}_{j}}}{\sigma_{{y}_{i}}} \right) , \qquad \mathsf{and}
+	\end{equation}
+	\begin{equation}
+		\mathsf{Indirect}^{\ast}_{i, j} = \mathsf{Total}^{\ast}_{i, j} - \mathsf{Direct}^{\ast}_{i, j}
+	\end{equation}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{CT-VAR \parencite{Deboeck-Preacher-2015, Chow-Losardo-Park-etal-2023}}
-% 	Measurement component:
-% 	\begin{equation}
-% 		\begin{gathered}
-% 			\mathbf{y}_{i, t_{m}}
-% 			=
-% 			\boldsymbol{\nu} + \boldsymbol{\Lambda} \boldsymbol{\eta}_{i, t_{m}} + \boldsymbol{\varepsilon}_{i, t_{m}},
-% 			\indent \boldsymbol{\varepsilon}_{i, t_{m}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Theta} \right)
-% 		\end{gathered}
-% 	\end{equation}
-% 	Dynamic component:
-% 	\begin{equation}
-% 		\mathsf{d} \boldsymbol{\eta}_{i, t}
-% 		=
-% 		\left( \textcolor{indirect}{\boldsymbol{\Phi}} \boldsymbol{\eta}_{i, t} \right) \mathsf{d}t + \boldsymbol{\Sigma}^{\frac{1}{2}} \mathsf{d} \mathbf{W}_{i, t}
-% 	\end{equation}
-% 	Three-variable CT-VAR mediation model:
-% 	\begin{equation}
-% 		\mathbf{y}
-% 		=
-% 		\left(
-% 		\begin{array}{c}
-% 			X \\ M \\ Y \\
-% 		\end{array}
-% 		\right) ,
-% 		\quad \mathsf{and} \quad
-% 		\boldsymbol{\eta}
-% 		=
-% 		\left(
-% 		\begin{array}{c}
-% 			\eta_X \\ \eta_M \\ \eta_Y \\
-% 		\end{array}
-% 		\right)
-% 	\end{equation}
-% 	Integral form:
-% 	\begin{equation}
-% 		\boldsymbol{\eta}_{i, t_{{m_{i}}}}
-% 		=
-% 		\boldsymbol{\alpha}_{\Delta t_{{m_{i}}}} + \textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}}} \boldsymbol{\eta}_{i, t_{m_{i} - 1}} + \boldsymbol{\zeta}_{i, t_{{m_{i}}}},
-% 		\indent
-% 		\boldsymbol{\zeta}_{i, t_{{m_{i}}}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Psi}_{\Delta t_{{m_{i}}}} \right)
-% 	\end{equation}
-% 	\begin{equation}
-% 		\textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}} = \exp \left( \Delta t \boldsymbol{\Phi} \right)}
-% 	\end{equation}
-% \end{frame}
+\begin{frame}
+	\frametitle{CT-VAR \parencite{Deboeck-Preacher-2015, Chow-Losardo-Park-etal-2023}}
+	Measurement component:
+	\begin{equation}
+		\begin{gathered}
+			\mathbf{y}_{i, t_{m}}
+			=
+			\boldsymbol{\nu} + \boldsymbol{\Lambda} \boldsymbol{\eta}_{i, t_{m}} + \boldsymbol{\varepsilon}_{i, t_{m}},
+			\indent \boldsymbol{\varepsilon}_{i, t_{m}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Theta} \right)
+		\end{gathered}
+	\end{equation}
+	Dynamic component:
+	\begin{equation}
+		\mathsf{d} \boldsymbol{\eta}_{i, t}
+		=
+		\left( \textcolor{indirect}{\boldsymbol{\Phi}} \boldsymbol{\eta}_{i, t} \right) \mathsf{d}t + \boldsymbol{\Sigma}^{\frac{1}{2}} \mathsf{d} \mathbf{W}_{i, t}
+	\end{equation}
+	Three-variable CT-VAR mediation model:
+	\begin{equation}
+		\mathbf{y}
+		=
+		\left(
+		\begin{array}{c}
+			X \\ M \\ Y \\
+		\end{array}
+		\right) ,
+		\quad \mathsf{and} \quad
+		\boldsymbol{\eta}
+		=
+		\left(
+		\begin{array}{c}
+			\eta_X \\ \eta_M \\ \eta_Y \\
+		\end{array}
+		\right)
+	\end{equation}
+	Integral form:
+	\begin{equation}
+		\boldsymbol{\eta}_{i, t_{{m_{i}}}}
+		=
+		\boldsymbol{\alpha}_{\Delta t_{{m_{i}}}} + \textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}}} \boldsymbol{\eta}_{i, t_{m_{i} - 1}} + \boldsymbol{\zeta}_{i, t_{{m_{i}}}},
+		\indent
+		\boldsymbol{\zeta}_{i, t_{{m_{i}}}} \sim \mathcal{N} \left( \mathbf{0}, \boldsymbol{\Psi}_{\Delta t_{{m_{i}}}} \right)
+	\end{equation}
+	\begin{equation}
+		\textcolor{indirect}{\boldsymbol{\beta}_{\Delta t_{{m_{i}}}} = \exp \left( \Delta t \boldsymbol{\Phi} \right)}
+	\end{equation}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Delta Method Confidence Intervals}
-% 	We define the delta method following the multivariate central limit theorem. Let $\boldsymbol{\theta}$ be $\mathsf{vec} \left( \boldsymbol{\Phi} \right)$, that is, the elements of the drift matrix $\boldsymbol{\Phi}$ in vector form sorted column-wise. Let $\hat{\boldsymbol{\theta}}$ be $\mathsf{vec} \left( \hat{\boldsymbol{\Phi}} \right)$, that is, the estimates of the elements of the drift matrix. The uncertainty around any functions of the estimates for $\hat{\boldsymbol{\theta}}$ is assumed to be characterized as:
-% 	\begin{equation}
-% 		\sqrt{n}
-% 		\left(
-% 		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
-% 		-
-% 		\mathbf{g} \left( \boldsymbol{\theta} \right)
-% 		\right)
-% 		\xrightarrow[]{
-% 			\mathsf{D}
-% 		}
-% 		\mathcal{N}
-% 		\left(
-% 		0,
-% 		\mathbf{J}
-% 		\boldsymbol{\Gamma}
-% 		\mathbf{J}^{\prime}
-% 		\right)
-% 	\end{equation}
-% 	where $\mathbf{g}$ is a vector of functions, $\mathbf{J}$ is the matrix of first-order derivatives of the functions in $\mathbf{g}$ with respect to the elements of $\boldsymbol{\theta}$ and $\boldsymbol{\Gamma}$ is the asymptotic variance-covariance matrix of $\hat{\boldsymbol{\theta}}$.
-% 	The approximate distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$ is given by
-% 	\begin{equation}
-% 		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
-% 		\approx
-% 		\mathcal{N}
-% 		\left(
-% 		\mathbf{g} \left( \boldsymbol{\theta} \right)
-% 		,
-% 		n^{-1}
-% 		\mathbf{J}
-% 		\boldsymbol{\Gamma}
-% 		\mathbf{J}^{\prime}
-% 		\right) .
-% 	\end{equation}
-% 	When $\boldsymbol{\Gamma}$ is unknown, by substitution, we can use the estimated sampling variance-covariance matrix of $\hat{\boldsymbol{\theta}}$, that is, $\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)$ for $n^{-1} \boldsymbol{\Gamma}$.
-% \end{frame}
+\begin{frame}
+	\frametitle{Delta Method Confidence Intervals}
+	We define the delta method following the multivariate central limit theorem. Let $\boldsymbol{\theta}$ be $\mathsf{vec} \left( \boldsymbol{\Phi} \right)$, that is, the elements of the drift matrix $\boldsymbol{\Phi}$ in vector form sorted column-wise. Let $\hat{\boldsymbol{\theta}}$ be $\mathsf{vec} \left( \hat{\boldsymbol{\Phi}} \right)$, that is, the estimates of the elements of the drift matrix. The uncertainty around any functions of the estimates for $\hat{\boldsymbol{\theta}}$ is assumed to be characterized as:
+	\begin{equation}
+		\sqrt{n}
+		\left(
+		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
+		-
+		\mathbf{g} \left( \boldsymbol{\theta} \right)
+		\right)
+		\xrightarrow[]{
+			\mathsf{D}
+		}
+		\mathcal{N}
+		\left(
+		0,
+		\mathbf{J}
+		\boldsymbol{\Gamma}
+		\mathbf{J}^{\prime}
+		\right)
+	\end{equation}
+	where $\mathbf{g}$ is a vector of functions, $\mathbf{J}$ is the matrix of first-order derivatives of the functions in $\mathbf{g}$ with respect to the elements of $\boldsymbol{\theta}$ and $\boldsymbol{\Gamma}$ is the asymptotic variance-covariance matrix of $\hat{\boldsymbol{\theta}}$.
+	The approximate distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$ is given by
+	\begin{equation}
+		\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)
+		\approx
+		\mathcal{N}
+		\left(
+		\mathbf{g} \left( \boldsymbol{\theta} \right)
+		,
+		n^{-1}
+		\mathbf{J}
+		\boldsymbol{\Gamma}
+		\mathbf{J}^{\prime}
+		\right) .
+	\end{equation}
+	When $\boldsymbol{\Gamma}$ is unknown, by substitution, we can use the estimated sampling variance-covariance matrix of $\hat{\boldsymbol{\theta}}$, that is, $\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)$ for $n^{-1} \boldsymbol{\Gamma}$.
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Monte Carlo (MC) Method Confidence Intervals}
-% 	Based on the asymptotic properties of maximum likelihood estimators, we can assume that they are normally distributed around the population parameters
-% 	\begin{equation}
-% 		\hat{\boldsymbol{\theta}}
-% 		\sim
-% 		\mathcal{N}
-% 		\left(
-% 		\boldsymbol{\theta},
-% 		\mathbb{V} \left( \hat{\boldsymbol{\theta}} \right)
-% 		\right) .
-% 	\end{equation}
-% 	Using this distributional assumption, a sampling distribution of $\hat{\boldsymbol{\theta}}$ which we refer to as $\hat{\boldsymbol{\theta}}^{\ast}$ can be generated by replacing the population parameters with sample estimates, that is,
-% 	\begin{equation}
-% 		\hat{\boldsymbol{\theta}}^{\ast}
-% 		\sim
-% 		\mathcal{N}
-% 		\left(
-% 		\hat{\boldsymbol{\theta}},
-% 		\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)
-% 		\right) .
-% 	\end{equation}
-% 	A sampling distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$, which we refer to as $\mathbf{g} \left( \hat{\boldsymbol{\theta}}^{\ast} \right)$, can be generated by using the simulated estimates to calculate $\mathbf{g}$. The standard deviations of the simulated estimates are the SEs. In resampling approaches, it is customary to use the percentiles of the generated distribution as CIs instead of the SEs.
-% \end{frame}
+\begin{frame}
+	\frametitle{Monte Carlo (MC) Method Confidence Intervals}
+	Based on the asymptotic properties of maximum likelihood estimators, we can assume that they are normally distributed around the population parameters
+	\begin{equation}
+		\hat{\boldsymbol{\theta}}
+		\sim
+		\mathcal{N}
+		\left(
+		\boldsymbol{\theta},
+		\mathbb{V} \left( \hat{\boldsymbol{\theta}} \right)
+		\right) .
+	\end{equation}
+	Using this distributional assumption, a sampling distribution of $\hat{\boldsymbol{\theta}}$ which we refer to as $\hat{\boldsymbol{\theta}}^{\ast}$ can be generated by replacing the population parameters with sample estimates, that is,
+	\begin{equation}
+		\hat{\boldsymbol{\theta}}^{\ast}
+		\sim
+		\mathcal{N}
+		\left(
+		\hat{\boldsymbol{\theta}},
+		\hat{\mathbb{V}} \left( \hat{\boldsymbol{\theta}} \right)
+		\right) .
+	\end{equation}
+	A sampling distribution of $\mathbf{g} \left( \hat{\boldsymbol{\theta}} \right)$, which we refer to as $\mathbf{g} \left( \hat{\boldsymbol{\theta}}^{\ast} \right)$, can be generated by using the simulated estimates to calculate $\mathbf{g}$. The standard deviations of the simulated estimates are the SEs. In resampling approaches, it is customary to use the percentiles of the generated distribution as CIs instead of the SEs.
+\end{frame}
 
-% \begin{frame}
-%     \frametitle{Study 1: Illustration Results}
-%     \includegraphics[width = 1\textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-illustration-coverage-1.png}
-% \end{frame}
+\begin{frame}
+    \frametitle{Study 1: Illustration Results}
+    \includegraphics[width = 1\textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-illustration-coverage-1.png}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{TAC curves for a specific individual}
-% 	\begin{columns}[c]
-% 		\column{0.3333333\textwidth}
-% 		\centering
-% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-01.pdf}
-% 		\\Wed
-% 		\column{0.3333333\textwidth}
-% 		\centering
-% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-02.pdf}
-% 		\\Thu
-% 		\column{0.3333333\textwidth}
-% 		\centering
-% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-03.pdf}
-% 		\\Fri
-% 	\end{columns}
-% 	\begin{columns}[c]
-% 		\column{0.3333333\textwidth}
-% 		\centering
-% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-04.pdf}
-% 		\\Sat
-% 		\column{0.3333333\textwidth}
-% 		\centering
-% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-05.pdf}
-% 		\\Sun
-% 		\column{0.3333333\textwidth}
-% 		\centering
-% 		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-06.pdf}
-% 		\\Mon
-% 	\end{columns}
-% \end{frame}
+\begin{frame}
+	\frametitle{TAC curves for a specific individual}
+	\begin{columns}[c]
+		\column{0.3333333\textwidth}
+		\centering
+		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-01.pdf}
+		\\Wed
+		\column{0.3333333\textwidth}
+		\centering
+		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-02.pdf}
+		\\Thu
+		\column{0.3333333\textwidth}
+		\centering
+		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-03.pdf}
+		\\Fri
+	\end{columns}
+	\begin{columns}[c]
+		\column{0.3333333\textwidth}
+		\centering
+		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-04.pdf}
+		\\Sat
+		\column{0.3333333\textwidth}
+		\centering
+		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-05.pdf}
+		\\Sun
+		\column{0.3333333\textwidth}
+		\centering
+		\includegraphics[width = 1\textwidth]{.setup/latex/figures/pdf/tac-06.pdf}
+		\\Mon
+	\end{columns}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{CUTS component of the CULTA model}
-% 	\centering
-% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/cuts-wide-2.pdf}
-% \end{frame}
+\begin{frame}
+	\frametitle{CUTS component of the CULTA model}
+	\centering
+	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/cuts-wide-2.pdf}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{LTA component of the CULTA model}
-% 	\centering
-% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/culta-details-wide-2.pdf}
-% \end{frame}
+\begin{frame}
+	\frametitle{LTA component of the CULTA model}
+	\centering
+	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/pdf/culta-details-wide-2.pdf}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{CULTA simulation: Information criteria}
-% 	\centering
-% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-ic-unnamed-chunk-3-1.png}
-% \end{frame}
+\begin{frame}
+	\frametitle{CULTA simulation: Information criteria}
+	\centering
+	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-ic-unnamed-chunk-3-1.png}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{CULTA simulation: Relative bias}
-% 	\centering
-% 	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-lta-est-bias-1.png}
-% \end{frame}
+\begin{frame}
+	\frametitle{CULTA simulation: Relative bias}
+	\centering
+	\includegraphics[width = .90 \textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-lta-est-bias-1.png}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Simulation results: MetaVAR is strongest for heterogeneity}
-% 	\centering
-% 	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/png/fig-vignettes-manuscript-figures-overview-1.png}
-% 	\note{
-% 		\normalsize
-% 		\begin{itemize}
-% 			\item The simulation tells me where MetaVAR is most useful. I do not present it as a universal replacement for one-step models. For population averages, the Bayesian multilevel comparator stayed competitive. MetaVAR's clearest advantage was when the scientific target was heterogeneity: how much people differ, and how well we calibrate uncertainty about those differences.
-% 		\end{itemize}
-% 	}
-% \end{frame}
+\begin{frame}
+	\frametitle{Simulation results: MetaVAR is strongest for heterogeneity}
+	\centering
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/png/fig-vignettes-manuscript-figures-overview-1.png}
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item The simulation tells me where MetaVAR is most useful. I do not present it as a universal replacement for one-step models. For population averages, the Bayesian multilevel comparator stayed competitive. MetaVAR's clearest advantage was when the scientific target was heterogeneity: how much people differ, and how well we calibrate uncertainty about those differences.
+		\end{itemize}
+	}
+\end{frame}
 
-% \begin{frame}
-% 	\frametitle{Empirical illustration: Coupling}
-% 	\begin{minipage}[c]{0.5\textwidth}
-% 		\centering
-% 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-na-to-pa.pdf}
-% 	\end{minipage}\hfill
-% 	\begin{minipage}[c]{0.5\textwidth}
-% 		\centering
-% 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-pa-to-na.pdf}
-% 	\end{minipage}
-% \end{frame}
+\begin{frame}
+	\frametitle{Empirical illustration: Coupling}
+	\begin{minipage}[c]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-na-to-pa.pdf}
+	\end{minipage}\hfill
+	\begin{minipage}[c]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-pa-to-na.pdf}
+	\end{minipage}
+\end{frame}
 
-% \addtobeamertemplate{navigation symbols}{}{%
-% 	\usebeamerfont{footline}%
-% 	\usebeamercolor[fg]{footline}%
-% 	\hspace{1em}%
-% }
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+}
 
 %-------------------------------------------------------------------------------
 \section{References}
