@@ -98,7 +98,7 @@ cat(system("lscpu", intern = TRUE), sep = "\n")
 
 cat(system("free -g -h -t", intern = TRUE), sep = "\n")
 #>                total        used        free      shared  buff/cache   available
-#> Mem:            15Gi       1.4Gi       2.0Gi        47Mi        12Gi        14Gi
-#> Swap:          3.0Gi        44Ki       3.0Gi
-#> Total:          18Gi       1.4Gi       5.0Gi
+#> Mem:            15Gi       1.4Gi       2.1Gi        47Mi        12Gi        14Gi
+#> Swap:          3.0Gi        56Ki       3.0Gi
+#> Total:          18Gi       1.4Gi       5.1Gi
 ```
