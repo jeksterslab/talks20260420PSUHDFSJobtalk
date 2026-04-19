@@ -233,7 +233,6 @@
         \end{itemize}
     }
 \end{frame}
-
 \begin{frame}
 	\frametitle{An intuition for inertia}
 	\vspace{.5em}
@@ -256,14 +255,14 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item The first intuition I want to put on the table is inertia.
-            \item A lot of the processes we care about in HDFS \textbf{do not reset from one moment to the next}. What happened yesterday, or even a few hours ago, can still shape what happens today.
-            \item That basic idea is what I mean by \textbf{inertia}: how much the past carries forward into the present.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item The first intuition I want to put on the table is inertia.
+			\item A lot of the processes we care about in HDFS \textbf{do not reset from one moment to the next}. What happened yesterday, or even a few hours ago, can still shape what happens today.
+			\item That basic idea is what I mean by \textbf{inertia}: how much the past carries forward into the present.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -288,18 +287,18 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \footnotesize
-        \begin{itemize}
-            \item Here both runners start at the same place, but their trajectories diverge over time.
-            \item The difference is not where they began. The difference is how strongly earlier states carry forward.
-            \item When inertia is stronger, the past keeps exerting influence for longer, so the trajectory changes more slowly.
-            \item When inertia is weaker, the system adjusts more quickly and settles back faster.
-            \item That is the key intuition I want to carry into the rest of the talk: dynamic processes are shaped not only by level, but by persistence.
-            \item In HDFS, that kind of persistence shows up in affective recovery, stress carryover, sleep, health behavior, and many other daily-life processes.
-            \item But dynamic processes are not only self-persistent. They can also shape one another.
-        \end{itemize}
-    }
+	\note{
+		\footnotesize
+		\begin{itemize}
+			\item Here both runners start at the same place, but their trajectories diverge over time.
+			\item The difference is not where they began. The difference is how strongly earlier states carry forward.
+			\item When inertia is stronger, the past keeps exerting influence for longer, so the trajectory changes more slowly.
+			\item When inertia is weaker, the system adjusts more quickly and settles back faster.
+			\item That is the key intuition I want to carry into the rest of the talk: dynamic processes are shaped not only by level, but by persistence.
+			\item In HDFS, that kind of persistence shows up in affective recovery, stress carryover, sleep, health behavior, and many other daily-life processes.
+			\item But dynamic processes are not only self-persistent. They can also shape one another.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -324,19 +323,19 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \footnotesize
-        \begin{itemize}
-            \item That brings us to coupling.
-            \item Here, a parent's stress spike is followed by greater child distress. So now we move from persistence within one process to spillover across connected processes.
-            \item This is the second core idea for the talk: dynamic systems are not just about how a variable carries itself forward, but also about how change in one process predicts later change in another.
-            \item Those two ideas---\textbf{inertia} and \textbf{coupling}---set up the three studies.
-            \item In Study 1, I ask how direct and indirect effects unfold across time.
-            \item In Study 2, I look at how different dynamic patterns emerge across people and situations.
-            \item And in Study 3, I ask how person-specific dynamics can be synthesized into population-level inference.
-            \item So with that intuition in place, let me start with Study 1, where the central question is how dynamic effects propagate across time through mediating processes.
-        \end{itemize}
-    }
+	\note{
+		\footnotesize
+		\begin{itemize}
+			\item That brings us to coupling.
+			\item Here, a parent's stress spike is followed by greater child distress. So now we move from persistence within one process to spillover across connected processes.
+			\item This is the second core idea for the talk: dynamic systems are not just about how a variable carries itself forward, but also about how change in one process predicts later change in another.
+			\item Those two ideas---\textbf{inertia} and \textbf{coupling}---set up the three studies.
+			\item In Study 1, I ask how direct and indirect effects unfold across time.
+			\item In Study 2, I look at how different dynamic patterns emerge across people and situations.
+			\item And in Study 3, I ask how person-specific dynamics can be synthesized into population-level inference.
+			\item So with that intuition in place, let me start with Study 1, where the central question is how dynamic effects propagate across time through mediating processes.
+		\end{itemize}
+	}
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -373,13 +372,13 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item Once we allow processes to persist and to influence one another, a natural next question is whether one process affects another through an intermediate pathway---and how that unfolds across time.
-            \item So I will start with Study 1, where I ask how mediation effects unfold when we model the process in continuous time instead of tying it to one arbitrary lag.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item Once we allow processes to persist and to influence one another, a natural next question is whether one process affects another through an intermediate pathway---and how that unfolds across time.
+			\item So I will start with Study 1, where I ask how mediation effects unfold when we model the process in continuous time instead of tying it to one arbitrary lag.
+		\end{itemize}
+	}
 \end{frame}
 
 \nocite{Deboeck-Preacher-2015, Ryan-Hamaker-2021, Pesigan-Russell-Chow-2025o}
@@ -389,13 +388,13 @@
 	\begin{itemize}
 		\item \normalsize \textbf{Substantive} \tiny \parencite[e.g.;][]{Pesigan-Luyckx-Alampay-2014, Bernardo-Wang-Pesigan-etal-2017, Zhang-Ku-Wu-et-al-2020}
 		\item \normalsize \textbf{Methodological} \tiny \parencite[e.g.;][]{Pesigan-Sun-Cheung-2023, Pesigan-Cheung-2020, Pesigan-Cheung-2024, Cheung-Pesigan-2023b, Cheung-Pesigan-Vong-2023}.
-        \begin{itemize}
-            \tiny
-            \item \url{https://CRAN.R-project.org/package=semmcci}
-	        \item \url{https://CRAN.R-project.org/package=semlbci}
-	        \item \url{https://CRAN.R-project.org/package=betaDelta}
-	        \item \url{https://CRAN.R-project.org/package=betaDSandwich}
-        \end{itemize}
+		      \begin{itemize}
+		      	\tiny
+		      	\item \url{https://CRAN.R-project.org/package=semmcci}
+		      	\item \url{https://CRAN.R-project.org/package=semlbci}
+		      	\item \url{https://CRAN.R-project.org/package=betaDelta}
+		      	\item \url{https://CRAN.R-project.org/package=betaDSandwich}
+		      \end{itemize}
 	\end{itemize}
 	\vspace{0em}
 	\begin{center}
@@ -411,20 +410,20 @@
 				align=center
 			] {%
 				\small
-                \textcolor{indirect}{Study 1 extends that line of work into continuous time by adding \textbf{standardized effect sizes}, principled \textbf{uncertainty quantification}, and an open-source tool in \texttt{cTMed}.}
+				\textcolor{indirect}{Study 1 extends that line of work into continuous time by adding \textbf{standardized effect sizes}, principled \textbf{uncertainty quantification}, and an open-source tool in \texttt{cTMed}.}
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \small
-        \begin{itemize}
-            \item Mediation has been a recurring part of my work from both substantive and methodological angles.
-            \item On the substantive side, I have used mediation to study mechanisms in applied problems, including alcohol use and related health behaviors.
-            \item On the methods side, I have worked on inference for indirect effects and related quantities, including confidence intervals, bootstrap and Monte Carlo approaches, and standardized effect-size inference.
-            \item Study 1 extends that line of work into continuous time.
-            \item Prior work in continuous-time mediation showed how direct, indirect, and total effects unfold across time. My contribution was to add standardized effect sizes, principled uncertainty quantification, and an open-source implementation that researchers can actually use.
-        \end{itemize}
-    }
+	\note{
+		\small
+		\begin{itemize}
+			\item Mediation has been a recurring part of my work from both substantive and methodological angles.
+			\item On the substantive side, I have used mediation to study mechanisms in applied problems, including alcohol use and related health behaviors.
+			\item On the methods side, I have worked on inference for indirect effects and related quantities, including confidence intervals, bootstrap and Monte Carlo approaches, and standardized effect-size inference.
+			\item Study 1 extends that line of work into continuous time.
+			\item Prior work in continuous-time mediation showed how direct, indirect, and total effects unfold across time. My contribution was to add standardized effect sizes, principled uncertainty quantification, and an open-source implementation that researchers can actually use.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -469,17 +468,17 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \footnotesize
-        \begin{itemize}
-            \item This slide gets at why the problem matters.
-            \item Mediation is fundamentally a temporal process, but many of our traditional models give us only a few snapshots of that process.
-            \item Cross-sectional models give us one snapshot, three-wave models give us coarse temporal ordering, and even discrete-time autoregressive models still depend on the particular measurement interval we happened to choose.
-            \item The key shift in continuous time is that we model the underlying process once, and then trace how direct, indirect, and total effects unfold over any time interval.
-            \item That means we can study mediation as a genuinely dynamic process, including in designs with irregular spacing.
-            \item For HDFS researchers, the payoff is that mechanisms in development, family process, and health behavior rarely operate at one arbitrary lag.
-        \end{itemize}
-    }
+	\note{
+		\footnotesize
+		\begin{itemize}
+			\item This slide gets at why the problem matters.
+			\item Mediation is fundamentally a temporal process, but many of our traditional models give us only a few snapshots of that process.
+			\item Cross-sectional models give us one snapshot, three-wave models give us coarse temporal ordering, and even discrete-time autoregressive models still depend on the particular measurement interval we happened to choose.
+			\item The key shift in continuous time is that we model the underlying process once, and then trace how direct, indirect, and total effects unfold over any time interval.
+			\item That means we can study mediation as a genuinely dynamic process, including in designs with irregular spacing.
+			\item For HDFS researchers, the payoff is that mechanisms in development, family process, and health behavior rarely operate at one arbitrary lag.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -523,17 +522,17 @@
 	\begin{minipage}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/total-effect-centrality.pdf}
-										
+												
 		\vspace{0.3em}
-										
+												
 		{\scriptsize \textbf{Total effect centrality}\\ \tiny Which variable matters most for shaping the rest of the system over time?}
 	\end{minipage}\hfill
 	\begin{minipage}[t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{.setup/latex/figures/pdf/indirect-effect-centrality.pdf}
-										
+												
 		\vspace{0.3em}
-										
+												
 		{\scriptsize \textbf{Indirect effect centrality}\\ \tiny Which variable matters most as the pathway through which effects spread over time?}
 	\end{minipage}\hfill
 	\vspace{0em}
@@ -604,47 +603,47 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item Study 1 focused on how dynamic effects unfold across time.
-            \item Study 2 asks a different but closely related question: can inertia itself help define qualitatively different risk patterns, beyond differences in average intoxication?
-            \item This is where I move from quantifying dynamic effects to building a new latent-variable framework for decomposing heterogeneity in intensive longitudinal alcohol data.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item Study 1 focused on how dynamic effects unfold across time.
+			\item Study 2 asks a different but closely related question: can inertia itself help define qualitatively different risk patterns, beyond differences in average intoxication?
+			\item This is where I move from quantifying dynamic effects to building a new latent-variable framework for decomposing heterogeneity in intensive longitudinal alcohol data.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Why this substantive problem demanded a new model}
 	% \scriptsize
 	% \begin{minipage}[t]{0.48\textwidth}
-		% \textbf{Substantive grounding}
-		% \begin{itemize}
-		% 	\item Addiction and alcohol have been a consistent substantive thread in my work.
-		% \end{itemize}
-						
-		% \textbf{Why this matters}
-		% \begin{itemize}
-		% 	\item Young adulthood is a high-risk period for heavy episodic drinking.
-		% 	\item Risk is not only about \textbf{how much} people drink, but also about \textbf{how intoxication carries over} across days.
-		% \end{itemize}
+	% \textbf{Substantive grounding}
+	% \begin{itemize}
+	% 	\item Addiction and alcohol have been a consistent substantive thread in my work.
+	% \end{itemize}
+							
+	% \textbf{Why this matters}
+	% \begin{itemize}
+	% 	\item Young adulthood is a high-risk period for heavy episodic drinking.
+	% 	\item Risk is not only about \textbf{how much} people drink, but also about \textbf{how intoxication carries over} across days.
+	% \end{itemize}
 	% \end{minipage}\hfill
 	% \begin{minipage}[t]{0.48\textwidth}
-		\textbf{Why Study 2 is exciting}
-        % Herring-Zamboanga-Olthuis-etal-2016
-        % Russell-Richards-Turrisi-etal-2025
-		\begin{itemize}
-            \item \textbf{Substantive grounding:} Alcohol and addiction have been a consistent part of my applied work {\tiny \parencite[e.g.][]{Zhang-Ku-Wu-et-al-2020, Zhang-Pesigan-Kahler-etal-2019, Zamboanga-Iwamoto-Pesigan-etal-2015, Zamboanga-Pesigan-Tomaso-etal-2015, Yu-Pesigan-Zhang-etal-2019, Yu-Wu-Pesigan-2015}}.
-			\item \textbf{Substantive question:} How do risky drinking patterns persist or change across days?
-			\item \textbf{Methodological challenge:} Transdermal alcohol concentration (TAC) features are multidimensional, partly shared, partly feature-specific, and dynamic over time.
-		\end{itemize}
-		% \vspace{0em}
-		% \textbf{Data}
-		% \begin{itemize}
-		% 	\item 222 young adults engaged in weekly HED
-		% 	\item 6-day sensor-based monitoring
-		% 	\item Baseline alcohol use disorder risk measured using \texttt{AUDIT}
-		% \end{itemize}
+	\textbf{Why Study 2 is exciting}
+	% Herring-Zamboanga-Olthuis-etal-2016
+	% Russell-Richards-Turrisi-etal-2025
+	\begin{itemize}
+		\item \textbf{Substantive grounding:} Alcohol and addiction have been a consistent part of my applied work {\tiny \parencite[e.g.][]{Zhang-Ku-Wu-et-al-2020, Zhang-Pesigan-Kahler-etal-2019, Zamboanga-Iwamoto-Pesigan-etal-2015, Zamboanga-Pesigan-Tomaso-etal-2015, Yu-Pesigan-Zhang-etal-2019, Yu-Wu-Pesigan-2015}}.
+		\item \textbf{Substantive question:} How do risky drinking patterns persist or change across days?
+		\item \textbf{Methodological challenge:} Transdermal alcohol concentration (TAC) features are multidimensional, partly shared, partly feature-specific, and dynamic over time.
+	\end{itemize}
+	% \vspace{0em}
+	% \textbf{Data}
+	% \begin{itemize}
+	% 	\item 222 young adults engaged in weekly HED
+	% 	\item 6-day sensor-based monitoring
+	% 	\item Baseline alcohol use disorder risk measured using \texttt{AUDIT}
+	% \end{itemize}
 	% \end{minipage}
 	\vspace{0em}
 	\normalsize
@@ -665,15 +664,15 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item This study is a natural next step for me.
-            \item Addiction and alcohol have been a consistent substantive thread in my work, but Study 2 is where that background meets the kind of quantitative contribution I want to make in HDFS.
-            \item TAC sensors give us richer and more objective data, but they also create a harder modeling problem: the features are partly shared, partly feature-specific, and changing across days.
-            \item That is exactly the setting that motivated CULTA.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item This study is a natural next step for me.
+			\item Addiction and alcohol have been a consistent substantive thread in my work, but Study 2 is where that background meets the kind of quantitative contribution I want to make in HDFS.
+			\item TAC sensors give us richer and more objective data, but they also create a harder modeling problem: the features are partly shared, partly feature-specific, and changing across days.
+			\item That is exactly the setting that motivated CULTA.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -711,16 +710,16 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item Here, the key data are \textbf{repeated day-specific TAC curves}: across the monitoring period, each participant can contribute multiple drinking-day curves, and from each curve we extract features like peak, rise rate, fall rate, and duration.
-            \item But once we do that, a new question appears: are we looking at one common intoxication process, feature-specific expressions of intoxication, or both?
-            \item And beyond that, does intoxication carry over across days?
-            \item So the substantive question becomes not just how intoxicated this day was, but what kind of drinking pattern it reflects and how stable that pattern is over time.
-            \item That is exactly the problem CULTA was designed to solve.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item Here, the key data are \textbf{repeated day-specific TAC curves}: across the monitoring period, each participant can contribute multiple drinking-day curves, and from each curve we extract features like peak, rise rate, fall rate, and duration.
+			\item But once we do that, a new question appears: are we looking at one common intoxication process, feature-specific expressions of intoxication, or both?
+			\item And beyond that, does intoxication carry over across days?
+			\item So the substantive question becomes not just how intoxicated this day was, but what kind of drinking pattern it reflects and how stable that pattern is over time.
+			\item That is exactly the problem CULTA was designed to solve.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -761,78 +760,78 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item CULTA answers that question by separating overall intoxication level from temporal persistence.
-            \item The main empirical result is that two profiles emerged, but the key point is how they differ.
-            \item Chronic HED is characterized by higher mean intoxication and lower inertia, while inertia-driven drinking shows lower mean intoxication but stronger carryover across days.
-            \item So this is not just a classification result. It shows that risky drinking patterns differ not only in level, but also in temporal persistence.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item CULTA answers that question by separating overall intoxication level from temporal persistence.
+			\item The main empirical result is that two profiles emerged, but the key point is how they differ.
+			\item Chronic HED is characterized by higher mean intoxication and lower inertia, while inertia-driven drinking shows lower mean intoxication but stronger carryover across days.
+			\item So this is not just a classification result. It shows that risky drinking patterns differ not only in level, but also in temporal persistence.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}{AUD risk predicts getting stuck in chronic HED}
-    \begin{minipage}[t]{0.31\textwidth}
-        \vspace{0pt}
-        \centering
-        \textbf{Start in chronic HED}
-
-        \vspace{0.6em}
-        {\scriptsize
-        No risk $\rightarrow$ Risk $\rightarrow$ Likely AUD\\[0.2em]
-        0.03 $\rightarrow$ 0.07 $\rightarrow$ 0.15}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.31\textwidth}
-        \vspace{0pt}
-        \centering
-        \textbf{Stay in chronic HED}
-
-        \vspace{0.6em}
-        {\scriptsize
-        No risk $\rightarrow$ Risk $\rightarrow$ Likely AUD\\[0.2em]
-        0.21 $\rightarrow$ 0.30 $\rightarrow$ 0.40}
-    \end{minipage}\hfill
-    \begin{minipage}[t]{0.31\textwidth}
-        \vspace{0pt}
-        \centering
-        \textbf{Shift into chronic HED}
-
-        \vspace{0.6em}
-        {\scriptsize
-        No risk $\rightarrow$ Risk $\rightarrow$ Likely AUD\\[0.2em]
-        0.03 $\rightarrow$ 0.06 $\rightarrow$ 0.10}
-    \end{minipage}
-
-    \vspace{0.8em}
-
-    \begin{center}
-        \begin{tikzpicture}
-            \node[
-                draw=indirect,
-                rounded corners=4pt,
-                line width=0.8pt,
-                fill=white,
-                inner xsep=8pt,
-                inner ysep=6pt,
-                text width=0.96\textwidth,
-                align=center
-            ] {%
-                \small
-                \textcolor{indirect}{CULTA does not just classify drinking days; it helps identify \textbf{who is likely to get stuck in riskier dynamic patterns}.}
-            };
-        \end{tikzpicture}
-    \end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item AUD risk helps identify who is more likely to start in, remain in, or shift into the chronic HED profile.
-            \item The main pattern is simple: as AUD risk increases, so does the probability of getting stuck in the chronic pattern.
-            \item So Study 2 shows that risky drinking patterns are not defined by average intoxication alone, but also by persistence and who gets stuck in maladaptive dynamics over time.
-            \item And once we start treating these dynamic signatures as meaningful individual differences, the next question is how to synthesize them at the population level without averaging them away.
-            \item That is exactly the problem I take up in Study 3.
-        \end{itemize}
-    }
+	\begin{minipage}[t]{0.31\textwidth}
+		\vspace{0pt}
+		\centering
+		\textbf{Start in chronic HED}
+		
+		\vspace{0.6em}
+		{\scriptsize
+			No risk $\rightarrow$ Risk $\rightarrow$ Likely AUD\\[0.2em]
+			0.03 $\rightarrow$ 0.07 $\rightarrow$ 0.15}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.31\textwidth}
+		\vspace{0pt}
+		\centering
+		\textbf{Stay in chronic HED}
+		
+		\vspace{0.6em}
+		{\scriptsize
+			No risk $\rightarrow$ Risk $\rightarrow$ Likely AUD\\[0.2em]
+			0.21 $\rightarrow$ 0.30 $\rightarrow$ 0.40}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.31\textwidth}
+		\vspace{0pt}
+		\centering
+		\textbf{Shift into chronic HED}
+		
+		\vspace{0.6em}
+		{\scriptsize
+			No risk $\rightarrow$ Risk $\rightarrow$ Likely AUD\\[0.2em]
+			0.03 $\rightarrow$ 0.06 $\rightarrow$ 0.10}
+	\end{minipage}
+	
+	\vspace{0.8em}
+	
+	\begin{center}
+		\begin{tikzpicture}
+			\node[
+				draw=indirect,
+				rounded corners=4pt,
+				line width=0.8pt,
+				fill=white,
+				inner xsep=8pt,
+				inner ysep=6pt,
+				text width=0.96\textwidth,
+				align=center
+			] {%
+				\small
+				\textcolor{indirect}{CULTA does not just classify drinking days; it helps identify \textbf{who is likely to get stuck in riskier dynamic patterns}.}
+			};
+		\end{tikzpicture}
+	\end{center}
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item AUD risk helps identify who is more likely to start in, remain in, or shift into the chronic HED profile.
+			\item The main pattern is simple: as AUD risk increases, so does the probability of getting stuck in the chronic pattern.
+			\item So Study 2 shows that risky drinking patterns are not defined by average intoxication alone, but also by persistence and who gets stuck in maladaptive dynamics over time.
+			\item And once we start treating these dynamic signatures as meaningful individual differences, the next question is how to synthesize them at the population level without averaging them away.
+			\item That is exactly the problem I take up in Study 3.
+		\end{itemize}
+	}
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -869,47 +868,47 @@
 			};
 		\end{tikzpicture}
 	\end{center}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item Study 3 asks how to preserve \textbf{person-specific dynamics} while still making valid \textbf{population-level} inferences.
-            \item For me, this is not only a statistical problem.
-            \item It is the problem behind many HDFS questions, because we often care about \textbf{dynamic parameters} that capture regulation, adaptation, spillover, and risk in ways that \textbf{differ meaningfully across people, dyads, and families}.
-            \item So the question is how to synthesize those individual dynamic signatures without averaging away the heterogeneity that makes them substantively important.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item Study 3 asks how to preserve \textbf{person-specific dynamics} while still making valid \textbf{population-level} inferences.
+			\item For me, this is not only a statistical problem.
+			\item It is the problem behind many HDFS questions, because we often care about \textbf{dynamic parameters} that capture regulation, adaptation, spillover, and risk in ways that \textbf{differ meaningfully across people, dyads, and families}.
+			\item So the question is how to synthesize those individual dynamic signatures without averaging away the heterogeneity that makes them substantively important.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Dyadic phenotypes}
 	\centering
 	\includegraphics[scale = .5]{.setup/latex/figures/pdf/dyadic-phenotypes.pdf}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item Before I show the mechanics of MetaVAR, I want to show the kind of scientific target I care about.
-            \item Imagine estimating a dynamic signature for each parent–child dyad: some dyads recover quickly after disturbance, some show stress contagion, some show buffering, and some show mutual amplification.
-            \item Those are not just abstract parameters. They are candidate dynamic phenotypes of dyadic regulation and functioning.
-            \item And once we can estimate those signatures well, the next question is \textbf{how to synthesize them without flattening the very heterogeneity that makes them interesting}.
-            \item That is the problem MetaVAR is designed to solve.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item Before I show the mechanics of MetaVAR, I want to show the kind of scientific target I care about.
+			\item Imagine estimating a dynamic signature for each parent–child dyad: some dyads recover quickly after disturbance, some show stress contagion, some show buffering, and some show mutual amplification.
+			\item Those are not just abstract parameters. They are candidate dynamic phenotypes of dyadic regulation and functioning.
+			\item And once we can estimate those signatures well, the next question is \textbf{how to synthesize them without flattening the very heterogeneity that makes them interesting}.
+			\item That is the problem MetaVAR is designed to solve.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
 	\frametitle{The trade-off MetaVAR is designed to solve}
 	\centering
-    \includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/pdf/metavar-tradeoff-2.pdf}
-    \note{
-        \small
-        \begin{itemize}
-            \item There is a real trade-off here.
-            \item One-step hierarchical models are attractive because they estimate population averages and individual differences together. But the cost is that person-specific dynamics can get pulled toward the population mean.
-            \item At the other extreme, we can fit a separate model per person and summarize afterward. That preserves the idiographic fits and scales well, but it can treat all person-level estimates as if they were equally precise.
-            \item MetaVAR is the middle ground: keep the person-specific models, but carry their uncertainty into the second stage.
-            \item In HDFS terms, this matters whenever we care not only about the average person, dyad, or family, but also about how much meaningful variation there is around that average and what predicts it.
-        \end{itemize}
-    }
+	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/pdf/metavar-tradeoff-2.pdf}
+	\note{
+		\small
+		\begin{itemize}
+			\item There is a real trade-off here.
+			\item One-step hierarchical models are attractive because they estimate population averages and individual differences together. But the cost is that person-specific dynamics can get pulled toward the population mean.
+			\item At the other extreme, we can fit a separate model per person and summarize afterward. That preserves the idiographic fits and scales well, but it can treat all person-level estimates as if they were equally precise.
+			\item MetaVAR is the middle ground: keep the person-specific models, but carry their uncertainty into the second stage.
+			\item In HDFS terms, this matters whenever we care not only about the average person, dyad, or family, but also about how much meaningful variation there is around that average and what predicts it.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -917,17 +916,17 @@
 	\centering
 	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/pdf/metavar-workflow.pdf}
 	\begin{itemize}
-        \tiny
+		\tiny
 		\item \url{https://CRAN.R-project.org/package=fitVARMxID}
-          \begin{itemize}
-              \tiny
-              \item \texttt{estimates <- FitVARMxID(data, observed = ("na", "pa"), id = "id", ncores = 32)}
-          \end{itemize}
+		      \begin{itemize}
+		      	\tiny
+		      	\item \texttt{estimates <- FitVARMxID(data, observed = ("na", "pa"), id = "id", ncores = 32)}
+		      \end{itemize}
 		\item \url{https://CRAN.R-project.org/package=metaDyn}
-          \begin{itemize}
-              \tiny
-              \item \texttt{meta <- MetaVARMx(estimates)}
-          \end{itemize}
+		      \begin{itemize}
+		      	\tiny
+		      	\item \texttt{meta <- MetaVARMx(estimates)}
+		      \end{itemize}
 	\end{itemize}
 	\note{
 		\normalsize
@@ -943,15 +942,15 @@
 	\frametitle{Simulation results: MetaVAR is strongest for heterogeneity}
 	\centering
 	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/png/fig-vignettes-manuscript-figures-coverage-1.png}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item The simulation clarifies where MetaVAR is especially useful.
-            \item Its clearest advantage is when the scientific target is \textbf{heterogeneity}: how much people differ, and how well we calibrate uncertainty about those differences.
-            \item For population averages, the Bayesian multilevel comparator remained competitive.
-            \item So I see MetaVAR not as a universal replacement, but as a strong option when we want to preserve idiographic estimation while still drawing valid population-level inferences about heterogeneity.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item The simulation clarifies where MetaVAR is especially useful.
+			\item Its clearest advantage is when the scientific target is \textbf{heterogeneity}: how much people differ, and how well we calibrate uncertainty about those differences.
+			\item For population averages, the Bayesian multilevel comparator remained competitive.
+			\item So I see MetaVAR not as a universal replacement, but as a strong option when we want to preserve idiographic estimation while still drawing valid population-level inferences about heterogeneity.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -979,16 +978,16 @@
 	\frametitle{Empirical illustration: Heterogeneity in affect dynamics}
 	\centering
 	\includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{.setup/latex/figures/pdf/empirical-heterogeneity.pdf}
-    \note{
-        \footnotesize
-        \begin{itemize}
-            \item The more important result is not only where the average lies, but how much people differ around it.
-            \item The dot is the population average, the thin interval is the 95\% confidence interval for that average, and the wider band shows approximate between-person heterogeneity around it.
-            \item That wider band comes from the random-effects variance for each parameter, so it reflects population spread rather than uncertainty about the mean.
-            \item So people differ meaningfully in their set points, in how persistent affect is, and in how strongly negative and positive affect influence one another over time.
-            \item The payoff is that heterogeneity stops being a nuisance term and becomes a substantive result: people differ in their set points, persistence, coupling, and co-fluctuation, and those differences are exactly what we often care about in HDFS.
-        \end{itemize}
-    }
+	\note{
+		\footnotesize
+		\begin{itemize}
+			\item The more important result is not only where the average lies, but how much people differ around it.
+			\item The dot is the population average, the thin interval is the 95\% confidence interval for that average, and the wider band shows approximate between-person heterogeneity around it.
+			\item That wider band comes from the random-effects variance for each parameter, so it reflects population spread rather than uncertainty about the mean.
+			\item So people differ meaningfully in their set points, in how persistent affect is, and in how strongly negative and positive affect influence one another over time.
+			\item The payoff is that heterogeneity stops being a nuisance term and becomes a substantive result: people differ in their set points, persistence, coupling, and co-fluctuation, and those differences are exactly what we often care about in HDFS.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -1004,22 +1003,22 @@
 		clip
 	]{.setup/latex/figures/pdf/covariate-outcome.pdf}
 	\begin{itemize}
-        \tiny
+		\tiny
 		\item \url{https://CRAN.R-project.org/package=metaDyn}
-          \begin{itemize}
-              \tiny
-              \item \texttt{meta <- MetaVARMx(estimates, x = contextual, z = downstream)}
-          \end{itemize}
+		      \begin{itemize}
+		      	\tiny
+		      	\item \texttt{meta <- MetaVARMx(estimates, x = contextual, z = downstream)}
+		      \end{itemize}
 	\end{itemize}
-    \note{
-        \normalsize
-        \begin{itemize}
-            \item This slide shows why MetaVAR matters beyond a single methods paper.
-            \item In a broader SEM framework, person-specific dynamic signatures can be modeled as outcomes of contextual factors and as predictors of later outcomes.
-            \item So instead of stopping at ``people differ,'' we can ask what predicts those differences and why they matter downstream.
-            \item That is the bridge to the next slide: toward dynamic phenotypes in HDFS.
-        \end{itemize}
-    }
+	\note{
+		\normalsize
+		\begin{itemize}
+			\item This slide shows why MetaVAR matters beyond a single methods paper.
+			\item In a broader SEM framework, person-specific dynamic signatures can be modeled as outcomes of contextual factors and as predictors of later outcomes.
+			\item So instead of stopping at ``people differ,'' we can ask what predicts those differences and why they matter downstream.
+			\item That is the bridge to the next slide: toward dynamic phenotypes in HDFS.
+		\end{itemize}
+	}
 \end{frame}
 
 %-------------------------------------------------------------------------------
@@ -1040,18 +1039,18 @@
 	]{.setup/latex/figures/pdf/dynamic-synthesis-platform.pdf}
 	% \raggedright
 	% {\tiny Related ongoing work: invited full-manuscript submission to a \textit{Psychometrika} special issue on ``Data Intensive Methods in Psychometrics.''}
-    \note{
-        \footnotesize
-        \begin{itemize}
-            \item This is where I see the work going next.
-            \item The core idea is to estimate dynamic phenotypes, carry their uncertainty forward, and make valid population-level inferences about them.
-            \item The people-and-contexts panel reflects the multilevel structure of the questions I want to study in HDFS---from persons to dyads, families, studies, and everyday settings.
-            \item The linked-data panel reflects the kinds of data that increasingly define the field.
-            \item The richer-models panel reflects the model families that can support those questions.
-            \item And the substantive-targets panel keeps the agenda grounded in family life, development, and health.
-            \item So the goal is not methods for their own sake. It is to help HDFS researchers study meaningful dynamic phenotypes in ways that are statistically principled and practically usable.
-        \end{itemize}
-    }
+	\note{
+		\footnotesize
+		\begin{itemize}
+			\item This is where I see the work going next.
+			\item The core idea is to estimate dynamic phenotypes, carry their uncertainty forward, and make valid population-level inferences about them.
+			\item The people-and-contexts panel reflects the multilevel structure of the questions I want to study in HDFS---from persons to dyads, families, studies, and everyday settings.
+			\item The linked-data panel reflects the kinds of data that increasingly define the field.
+			\item The richer-models panel reflects the model families that can support those questions.
+			\item And the substantive-targets panel keeps the agenda grounded in family life, development, and health.
+			\item So the goal is not methods for their own sake. It is to help HDFS researchers study meaningful dynamic phenotypes in ways that are statistically principled and practically usable.
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}
@@ -1092,17 +1091,17 @@
 
 \begin{frame}[plain]
 	\titlepage
-    \note{
-        \small
-        \begin{itemize}
-            \item Thank you very much for your attention.
-            \item I have tried to show a research program centered on dynamic processes: how change unfolds over time, how people and relationships differ in those processes, and how we can build tools that make those questions easier to study well.
-            \item Across the three studies, the common thread is not methodology for its own sake, but usable quantitative tools for substantive questions in development, family life, health, and daily contexts.
-            \item What excites me most about HDFS is that these are exactly the kinds of questions the field asks.
-            \item I would be excited to contribute here through methods development, collaboration, student training, and building usable quantitative infrastructure that helps substantive researchers ask better questions about development, family life, and health.
-            \item Thank you, and I would be very happy to take questions.
-        \end{itemize}
-    }
+	\note{
+		\small
+		\begin{itemize}
+			\item Thank you very much for your attention.
+			\item I have tried to show a research program centered on dynamic processes: how change unfolds over time, how people and relationships differ in those processes, and how we can build tools that make those questions easier to study well.
+			\item Across the three studies, the common thread is not methodology for its own sake, but usable quantitative tools for substantive questions in development, family life, health, and daily contexts.
+			\item What excites me most about HDFS is that these are exactly the kinds of questions the field asks.
+			\item I would be excited to contribute here through methods development, collaboration, student training, and building usable quantitative infrastructure that helps substantive researchers ask better questions about development, family life, and health.
+			\item Thank you, and I would be very happy to take questions.
+		\end{itemize}
+	}
 \end{frame}
 
 \setbeamertemplate{navigation symbols}{%
@@ -1178,9 +1177,9 @@
 			\centering
 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-13-31.pdf}
 		\end{subfigure}
-																	
+																			
 		\medskip
-																	
+																			
 		\begin{subfigure}{.333333\textwidth}
 			\centering
 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-21-32.pdf}
@@ -1195,9 +1194,9 @@
 			\centering
 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-31-23-32.pdf}
 		\end{subfigure}
-																	
+																			
 		\medskip
-																	
+																			
 		\begin{subfigure}{.333333\textwidth}
 			\centering
 			\includegraphics[scale = .38]{.setup/latex/figures/pdf/dt-one-two-three-full-11-31-33.pdf}
@@ -1218,9 +1217,9 @@
 
 \begin{frame}
 	\frametitle{Total Effect Decomposition}
-		    
+			    
 	Total, Direct, and Indirect Effects:
-		
+			
 	\begin{equation}
 		\mathsf{Total}
 		=
@@ -1249,9 +1248,9 @@
 		=
 		\mathsf{Total} - \mathsf{Direct} .
 	\end{equation}
-		
+			
 	Standardized Effects: Effect Size Measures
-		
+			
 	\begin{equation}
 		\mathsf{Total}^{\ast}_{i, j}
 		=
@@ -1380,8 +1379,8 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Study 1: Illustration Results}
-    \includegraphics[width = 1\textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-illustration-coverage-1.png}
+	\frametitle{Study 1: Illustration Results}
+	\includegraphics[width = 1\textwidth]{.setup/latex/figures/png/fig-vignettes-scatter-plots-illustration-coverage-1.png}
 \end{frame}
 
 \begin{frame}
